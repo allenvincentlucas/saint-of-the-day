@@ -11,7 +11,10 @@
       "feast_days_other": "array of {tradition, date, date_display} for other denominations, optional",
       "patronage": "short patronage string for the fact chip",
       "era": "short era string for the fact chip, e.g. '1st century'",
-      "colors": {"primary": "#hex", "accent": "#hex"},
+      "colors": {
+        "primary": "#hex",
+        "accent": "#hex"
+      },
       "page": "relative path to the HTML page",
       "preview": "relative path to the 1200x630 PNG",
       "added": "YYYY-MM-DD this entry was added to the manifest",
@@ -27,17 +30,65 @@
       "feast_day_display": "August 3",
       "feast_day_tradition": "Catholic Church (Extraordinary Form) / widely cited general Catholic date",
       "feast_days_other": [
-        {"tradition": "Catholic Church (Ordinary Form, Roman Rite)", "date": "05-20", "date_display": "May 20"},
-        {"tradition": "Eastern Orthodox Church (most jurisdictions)", "date": "05-20", "date_display": "May 20"},
-        {"tradition": "Episcopal Church (USA)", "date": "01-27", "date_display": "January 27"},
-        {"tradition": "ELCA (Lutheran)", "date": "01-27", "date_display": "January 27"},
-        {"tradition": "LCMS (Lutheran)", "date": "10-25", "date_display": "October 25"}
+        {
+          "tradition": "Catholic Church (Ordinary Form, Roman Rite)",
+          "date": "05-20",
+          "date_display": "May 20"
+        },
+        {
+          "tradition": "Eastern Orthodox Church (most jurisdictions)",
+          "date": "05-20",
+          "date_display": "May 20"
+        },
+        {
+          "tradition": "Episcopal Church (USA)",
+          "date": "01-27",
+          "date_display": "January 27"
+        },
+        {
+          "tradition": "ELCA (Lutheran)",
+          "date": "01-27",
+          "date_display": "January 27"
+        },
+        {
+          "tradition": "LCMS (Lutheran)",
+          "date": "10-25",
+          "date_display": "October 25"
+        }
       ],
       "patronage": "Dyers",
       "era": "1st century",
-      "colors": {"primary": "#4b2e6b", "accent": "#c9862f"},
+      "colors": {
+        "primary": "#4b2e6b",
+        "accent": "#c9862f"
+      },
       "page": "saints/st-lydia.html",
       "preview": "saints/previews/st-lydia.png",
+      "added": "2026-08-03",
+      "release_date": "2026-08-03"
+    },
+    {
+      "slug": "oswald-of-northumbria",
+      "name": "St. Oswald of Northumbria",
+      "tagline": "The warrior king who planted a cross before the battle that brought Christianity back to Northumbria",
+      "feast_day": "08-05",
+      "feast_day_display": "August 5",
+      "feast_day_tradition": "Catholic Church / Anglican Communion",
+      "feast_days_other": [
+        {
+          "tradition": "Eastern Orthodox Church (most jurisdictions)",
+          "date": "08-05",
+          "date_display": "August 5"
+        }
+      ],
+      "patronage": "Soldiers",
+      "era": "7th century",
+      "colors": {
+        "primary": "#262b28",
+        "accent": "#b3862b"
+      },
+      "page": "saints/st-oswald-of-northumbria.html",
+      "preview": "saints/previews/st-oswald-of-northumbria.png",
       "added": "2026-08-03",
       "release_date": "2026-08-03"
     }
