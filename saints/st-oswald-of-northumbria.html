@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Oswald of Northumbria — The King Who Planted a Cross</title>
+<meta name="description" content="The warrior king who planted a cross before the battle that brought Christianity back to Northumbria. His story, his feast day, and why he still matters.">
+
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/favicon-180.png">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="St. Oswald of Northumbria">
+<meta property="og:description" content="The warrior king who planted a cross before the battle that brought Christianity back to Northumbria.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-oswald-of-northumbria.png">
+<meta property="og:url" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/st-oswald-of-northumbria.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="St. Oswald of Northumbria">
+<meta name="twitter:description" content="The warrior king who planted a cross before the battle that brought Christianity back to Northumbria.">
+<meta name="twitter:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-oswald-of-northumbria.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --stone: #262b28;
+    --stone-2: #323833;
+    --moss: #55643f;
+    --moss-light: #8a9a6d;
+    --gold: #b3862b;
+    --gold-light: #d9ae5c;
+    --oxblood: #833b2c;
+    --oxblood-light: #b06650;
+    --bone: #ece4d2;
+    --bone-dim: #b9b09a;
+    --slate: #6b7570;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--bone);
+    color: var(--stone);
+    font-family: 'Spectral', Georgia, serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation:none !important; transition:none !important; }
+  }
+
+  h1,h2,h3{ font-family:'Cinzel', Georgia, serif; font-weight:600; margin:0 0 .4em; color: var(--stone); letter-spacing:.01em; }
+  a{ color: var(--moss); }
+  .label{ font-family:'JetBrains Mono', monospace; text-transform:uppercase; letter-spacing:.14em; font-size:.7rem; color: var(--slate); }
+
+  .wrap{ max-width: 760px; margin:0 auto; padding:0 24px; }
+
+  /* ===== Standing Cross (signature element) =====
+     A simple upright cross-shaped rule, echoing the wooden cross Oswald
+     planted at Heavenfield the night before battle. Recurs as the
+     section divider throughout the page — quiet, load-bearing, literal. */
+  .standing-cross{ display:flex; justify-content:center; align-items:center; height:52px; margin: 0 auto; }
+  .standing-cross svg{ height:100%; }
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    padding: 100px 0 76px;
+    background:
+      radial-gradient(650px 380px at 80% -10%, rgba(179,134,43,.20), transparent 60%),
+      linear-gradient(180deg, #171b19 0%, var(--stone) 55%, var(--stone-2) 100%);
+    color: var(--bone);
+    overflow:hidden;
+  }
+  .hero .wrap{ position:relative; z-index:2; }
+  .hero-eyebrow{ color: var(--gold-light); margin-bottom:18px; display:flex; gap:10px; align-items:center; font-family:'JetBrains Mono',monospace; font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; }
+  .hero-eyebrow .rule{ width:28px; height:1px; background: var(--gold-light); display:inline-block; }
+  .hero h1{ color:#f5efe0; font-size: clamp(2.3rem, 6vw, 3.4rem); line-height:1.08; }
+  .hero .tagline{ font-size:1.15rem; color:var(--bone-dim); max-width:48ch; margin-top:18px; font-style:italic; font-family:'Spectral',serif; }
+  .hero-chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:32px; }
+  .chip{
+    font-family:'JetBrains Mono', monospace; font-size:.72rem; letter-spacing:.03em;
+    border:1px solid rgba(236,228,210,.3); color:#e7dcc4;
+    padding:6px 12px; border-radius:2px; background: rgba(0,0,0,.15);
+  }
+  .chip.chip-gold{ border-color: var(--gold); color: var(--gold-light); }
+
+  .hero-art{ margin-top:44px; max-width:360px; }
+
+  /* ===== Sections ===== */
+  section.content{ padding:66px 0; }
+  section.content h2{ font-size: clamp(1.4rem, 3.2vw, 1.9rem); }
+  .lede{ font-size:1.06rem; color:#4a5450; max-width:62ch; }
+  p{ max-width:68ch; }
+
+  /* Primary source / carved-stone block */
+  .stonecut{
+    background: var(--stone);
+    color: var(--bone);
+    border-left: 4px solid var(--gold);
+    padding: 32px 30px;
+    margin: 28px 0;
+  }
+  .stonecut .ref{ font-family:'JetBrains Mono', monospace; font-size:.7rem; color: var(--gold-light); display:block; margin-bottom:12px; letter-spacing:.08em; }
+  .stonecut blockquote{ margin:0; font-family:'Cinzel', Georgia, serif; font-weight:500; font-size:1.05rem; line-height:1.7; color:#f5efe0; letter-spacing:.01em; }
+  .stonecut cite{ display:block; margin-top:16px; font-style:normal; font-family:'JetBrains Mono', monospace; font-size:.76rem; color: var(--bone-dim); }
+
+  .callout{
+    background: linear-gradient(135deg, var(--moss), #3f4a30);
+    color: var(--bone);
+    padding: 30px 30px;
+    border-radius: 2px;
+    margin: 28px 0;
+  }
+  .callout h3{ color: var(--gold-light); font-size:1.08rem; }
+  .callout p{ color:#dde3d0; margin-bottom:0; max-width:none; }
+
+  .callout.martyr{ background: linear-gradient(135deg, var(--oxblood), #5c281d); }
+  .callout.martyr h3{ color: #eecbb8; }
+  .callout.martyr p{ color: #f0ddd2; }
+
+  /* raven watermark, used once near the martyrdom section */
+  .raven-mark{ display:flex; justify-content:flex-end; margin: 6px 0 -6px; opacity:.5; }
+
+  .watch-grid{ display:grid; grid-template-columns:1fr; gap:26px; margin-top:22px; }
+  @media(min-width:640px){ .watch-grid{ grid-template-columns:1fr 1fr; } }
+  .video-frame{ position:relative; padding-top:56.25%; background:var(--stone); border-radius:2px; overflow:hidden; }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-cap{ font-family:'JetBrains Mono', monospace; font-size:.7rem; color:#4a5450; margin-top:10px; }
+
+  footer.site-footer{
+    background: var(--stone); color: var(--bone-dim);
+    padding: 46px 0 60px; margin-top:20px;
+  }
+  footer.site-footer a{ color: var(--gold-light); }
+  footer.site-footer .feast-list{ list-style:none; padding:0; margin:14px 0 0; font-family:'JetBrains Mono', monospace; font-size:.76rem; }
+  footer.site-footer .feast-list li{ padding:4px 0; border-bottom:1px dashed rgba(236,228,210,.15); display:flex; justify-content:space-between; max-width:480px; }
+  .back-link{ display:inline-block; margin-top:26px; font-family:'JetBrains Mono', monospace; font-size:.8rem; }
+</style>
+</head>
+<body>
+
+<header class="hero" id="sec-hero">
+  <div class="wrap">
+    <p class="hero-eyebrow"><span class="rule"></span>SAINT OF THE DAY &middot; 7TH CENTURY</p>
+    <h1>St. Oswald of Northumbria</h1>
+    <p class="tagline">The warrior king who planted a cross before the battle that brought Christianity back to Northumbria.</p>
+    <div class="hero-chips">
+      <span class="chip chip-gold">Feast August 5</span>
+      <span class="chip">Patron of soldiers</span>
+      <span class="chip">King &amp; Martyr, c. 604&ndash;642</span>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 360 210" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#b3862b" stop-opacity="0.55"/>
+            <stop offset="1" stop-color="#262b28" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <!-- dawn glow -->
+        <ellipse cx="230" cy="70" rx="150" ry="90" fill="url(#dawn)"/>
+        <!-- Hadrian's Wall, low horizon line -->
+        <path d="M0,168 L100,168 L104,160 L140,160 L144,168 L220,168 L224,158 L260,158 L264,168 L360,168" stroke="#6b7570" stroke-width="3" fill="none" opacity="0.6"/>
+        <path d="M0,178 L360,178" stroke="#3c4340" stroke-width="1" opacity="0.5"/>
+        <!-- standing cross -->
+        <rect x="166" y="60" width="8" height="108" rx="2" fill="#d9ae5c"/>
+        <rect x="140" y="92" width="60" height="8" rx="2" fill="#d9ae5c"/>
+        <!-- kneeling figure silhouette -->
+        <path d="M198,168 C198,150 208,146 214,146 C220,146 224,152 224,160 C230,158 236,162 236,168 Z" fill="#171b19"/>
+        <!-- mound of earth at cross base -->
+        <ellipse cx="170" cy="169" rx="22" ry="6" fill="#3c4340"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="standing-cross" aria-hidden="true">
+  <svg viewBox="0 0 24 52" width="24" height="52">
+    <rect x="10" y="0" width="4" height="52" fill="#b3862b"/>
+    <rect x="0" y="14" width="24" height="4" fill="#b3862b"/>
+  </svg>
+</div>
+
+<main>
+
+  <section class="content" id="sec-who">
+    <div class="wrap">
+      <p class="label">01 &middot; Who He Was</p>
+      <h2>An Exiled Prince, Raised in a Monastery's Shadow</h2>
+      <p class="lede">Before he was a king, Oswald was a refugee — a boy who grew up watching monks pray on a windswept island, seventeen years before he ever set foot back in his own kingdom.</p>
+      <p>Oswald was born around 604, son of Æthelfrith, the pagan king who had first united the two Northumbrian kingdoms of Bernicia and Deira by force. When Æthelfrith was killed in 616 by a rival, Oswald and his brothers fled north into exile among the Scots and Picts, eventually reaching the island monastery of Iona — the community founded a generation earlier by St. Columba. There, among Irish monks who had no interest in his royal blood, Oswald was baptized and raised as a Christian.</p>
+      <p>He would spend most of his youth in that exile, watching a kingdom that was not his own be ruled by others, until a chain of deaths — his rival King Edwin killed in battle in 633, then his own brother Eanfrith murdered by the victorious Cadwallon of Gwynedd in 634 — opened the way for his return.</p>
+    </div>
+  </section>
+
+  <div class="standing-cross" aria-hidden="true">
+    <svg viewBox="0 0 24 52" width="24" height="52">
+      <rect x="10" y="0" width="4" height="52" fill="#b3862b"/>
+      <rect x="0" y="14" width="24" height="4" fill="#b3862b"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-moment">
+    <div class="wrap">
+      <p class="label">02 &middot; The Defining Moment</p>
+      <h2>The Cross at Heavenfield</h2>
+      <p>In 634, Oswald returned with a small army — a handful of his father's veterans, young allies from Dál Riata, and, by every account, a faith he had no intention of hiding. He met Cadwallon's much larger force near Hadrian's Wall, at a spot afterward called Heavenfield, "the Heavenly Field."</p>
+      <p>The night before the battle, Oswald had a rough wooden cross cut and raised at the campsite. According to Bede, writing less than a century later, the cross was made in such haste that Oswald himself held it upright with his own hands while his soldiers packed the earth in around its base to make it stand. Then, before a mixed army of Christians and pagans alike, he called his men to kneel and pray together for victory.</p>
+      <p>They won decisively. Cadwallon was killed in the retreat, and Oswald took the throne of a reunited Northumbria — a kingdom he would spend the rest of his short reign trying to turn back toward the faith he'd found in exile.</p>
+    </div>
+  </section>
+
+  <div class="standing-cross" aria-hidden="true">
+    <svg viewBox="0 0 24 52" width="24" height="52">
+      <rect x="10" y="0" width="4" height="52" fill="#b3862b"/>
+      <rect x="0" y="14" width="24" height="4" fill="#b3862b"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-source">
+    <div class="wrap">
+      <p class="label">03 &middot; The Primary Source</p>
+      <h2>What Bede Actually Wrote</h2>
+      <p>The account comes from the Venerable Bede's <em>Ecclesiastical History of the English People</em> (completed 731), our earliest and most detailed source for Oswald's life. This is his description of the moment before Heavenfield, in the widely used 19th-century public-domain English translation:</p>
+
+      <div class="stonecut">
+        <span class="ref">BEDE, ECCLESIASTICAL HISTORY, BOOK III, CH. 2</span>
+        <blockquote>
+          &ldquo;Let us all kneel, and together beseech the true and living God Almighty in His mercy to defend us from the proud and cruel enemy; for He knows that we have undertaken a just war for the safety of our nation.&rdquo;
+        </blockquote>
+        <cite>Attributed by Bede to King Oswald, before the Battle of Heavenfield, 634 A.D. (public domain translation)</cite>
+      </div>
+
+      <p>Bede is careful to note that only some of Oswald's soldiers were baptized Christians at the time — the prayer was, in effect, an invitation extended to men who didn't yet share his faith. Whatever their belief going in, Bede records that the place became a site of pilgrimage and reported healings for generations afterward.</p>
+    </div>
+  </section>
+
+  <div class="standing-cross" aria-hidden="true">
+    <svg viewBox="0 0 24 52" width="24" height="52">
+      <rect x="10" y="0" width="4" height="52" fill="#b3862b"/>
+      <rect x="0" y="14" width="24" height="4" fill="#b3862b"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-table">
+    <div class="wrap">
+      <p class="label">04 &middot; The King's Table</p>
+      <h2>The Hand That Never Perished</h2>
+      <p>A year after Heavenfield, Oswald sent to Iona for a missionary bishop and, after a difficult first attempt, welcomed Aidan — the monk who would found the monastery at Lindisfarne under Oswald's protection, and become the king's close friend. Bede preserves a story from an Easter feast the two men shared: as they sat down to eat, a servant reported that a crowd of the poor had gathered outside the gate asking for food.</p>
+      <p>Oswald reportedly ordered his own untouched dish of food carried out to them — and, when told there was nothing else to give, had the royal silver serving-dish itself broken up and distributed. Aidan, watching, took hold of the king's right hand and is said to have prayed: <em>"May this hand never perish."</em> When Oswald was later killed and dismembered in battle, his arm was said to have remained miraculously incorrupt for centuries, kept as a relic first at Bamburgh and later moved between other shrines.</p>
+    </div>
+  </section>
+
+  <div class="standing-cross" aria-hidden="true">
+    <svg viewBox="0 0 24 52" width="24" height="52">
+      <rect x="10" y="0" width="4" height="52" fill="#833b2c"/>
+      <rect x="0" y="14" width="24" height="4" fill="#833b2c"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-martyr">
+    <div class="wrap">
+      <p class="label">05 &middot; The Martyr's Field</p>
+      <h2>Maserfield, 642</h2>
+      <p>Oswald's reign brought Northumbria eight years of relative stability and made him, by Bede's account, the most powerful king in Britain — an overlordship later historians would call the position of <em>Bretwalda</em>. But it was never a settled peace: Penda, the pagan king of Mercia who had allied with Cadwallon against Oswald's predecessor, remained a constant threat to the south.</p>
+      <p>In 642, the two met in battle at Maserfield, likely near present-day Oswestry in Shropshire. Oswald was killed — Bede reports only that he died "fighting for his fatherland," and that his final words, spoken as he fell, were a prayer for the souls of the men dying around him, not for himself. Penda, who had no reverence for his rival's faith, had Oswald's body dismembered and his head and arms displayed on stakes.</p>
+
+      <div class="raven-mark" aria-hidden="true">
+        <svg width="46" height="30" viewBox="0 0 46 30">
+          <path d="M2,20 C10,10 16,8 22,14 C26,8 34,6 44,12 C36,14 30,18 26,24 C22,18 14,16 8,22 Z" fill="#262b28"/>
+        </svg>
+      </div>
+      <p>Legend soon grew around the site: that a raven carried one of the severed arms to a nearby ash tree, which afterward became a place of healing — the origin, tradition holds, of the town name Oswestry, "Oswald's Tree." Whatever the legend's accuracy, the site of his death was venerated as holy ground almost immediately, and his remains were gathered up and dispersed as relics across Northumbria and beyond.</p>
+
+      <div class="callout martyr">
+        <h3>Why he was called a martyr</h3>
+        <p>Oswald died in battle, not for refusing to renounce his faith at a tyrant's demand — the usual measure of martyrdom. But the Northumbrian church venerated him as one almost immediately regardless, reading his death at the hands of a pagan king, in a war he framed from the start as a just and Christian cause, as a martyrdom of intention rather than one of formal trial.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="standing-cross" aria-hidden="true">
+    <svg viewBox="0 0 24 52" width="24" height="52">
+      <rect x="10" y="0" width="4" height="52" fill="#b3862b"/>
+      <rect x="0" y="14" width="24" height="4" fill="#b3862b"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-legacy">
+    <div class="wrap">
+      <p class="label">06 &middot; Legacy &amp; Patronage</p>
+      <h2>A Cult That Outgrew a Kingdom</h2>
+      <p>Oswald's cult spread with remarkable speed and reach for an early English king. His niece Osthryth, queen of Mercia — the very kingdom whose king had killed him — translated his remains to Bardney Abbey. His head, tradition holds, was eventually buried alongside the relics of St. Cuthbert at Durham Cathedral, where it's said to remain. Roughly seventy medieval churches in England were dedicated to him, along with others across Germany, Switzerland, Austria, Portugal, and Bohemia, carried abroad by missionaries and pilgrim-exiles who counted themselves his spiritual heirs.</p>
+      <p>He's remembered today as patron of soldiers — a fitting patronage for a king remembered equally for winning battles and for the cross he insisted on planting before one. But his more lasting legacy may be the one he set in motion at Lindisfarne: the monastery he gave to Aidan became, within a generation, one of the great centers of learning and art in early medieval Europe, home to the scholarship and manuscript work that outlived the kingdom that founded it.</p>
+    </div>
+  </section>
+
+  <div class="standing-cross" aria-hidden="true">
+    <svg viewBox="0 0 24 52" width="24" height="52">
+      <rect x="10" y="0" width="4" height="52" fill="#b3862b"/>
+      <rect x="0" y="14" width="24" height="4" fill="#b3862b"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-watch">
+    <div class="wrap">
+      <p class="label">07 &middot; Watch &amp; Reflect</p>
+      <h2>Two Ways Into His Story</h2>
+      <p class="lede">If you'd rather listen than read, these two overviews cover his life from different angles — one devotional, one historical.</p>
+      <div class="watch-grid">
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/AHdFqd7-Gvo" title="Saint Oswald of Northumbria: The Christian King" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <p class="video-cap">"Saint Oswald of Northumbria: The Christian King" — Catholic Saints Series.</p>
+        </div>
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/C7mnpxZ6Wdo" title="Oswald, The Saint-King of Northumbria" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <p class="video-cap">"Oswald, The Saint-King of Northumbria" — on his reign and its historical context.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="sec-footer">
+  <div class="wrap">
+    <p class="label" style="color:var(--gold-light)">Feast Day</p>
+    <ul class="feast-list">
+      <li><span>Catholic Church</span><span>August 5</span></li>
+      <li><span>Anglican Communion</span><span>August 5</span></li>
+      <li><span>Eastern Orthodox Church</span><span>August 5 (Aug 20, some Julian-calendar jurisdictions)</span></li>
+    </ul>
+    <a class="back-link" href="../archive.html">&larr; Back to the full archive</a>
+    &nbsp;&middot;&nbsp;
+    <a class="back-link" href="../index.html">Today's saint</a>
+  </div>
+</footer>
+
+</body>
+</html>
