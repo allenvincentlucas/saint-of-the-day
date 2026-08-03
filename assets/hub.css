@@ -1,5 +1,5 @@
 /* ============================================================
-   HUB THEME — "The Ordo"
+   HUB THEME — "The Ordo" (light / parchment variant)
    An illuminated liturgical-calendar aesthetic for the site's
    index and archive pages. Individual saint pages (saints/*.html)
    carry their own saint-specific theme, per project convention —
@@ -7,15 +7,16 @@
    ============================================================ */
 
 :root {
-  --ink: #1b1730;         /* page background — manuscript-at-night */
-  --ink-2: #241f3d;       /* card background */
-  --ink-3: #2d2650;       /* hover / raised surface */
-  --bone: #e7e3d6;        /* primary text on dark */
-  --bone-dim: #a9a3c4;    /* secondary text */
-  --gold: #b8862f;        /* gold leaf — accents, borders */
-  --rubric: #b3543f;      /* rubric red — dates & labels only, per scribal convention */
-  --sage: #5c7a5e;        /* illuminated border green */
-  --line: rgba(231, 227, 214, 0.14);
+  --parchment: #f7f2e6;    /* page background — vellum */
+  --parchment-2: #efe6d1;  /* card background */
+  --parchment-3: #e5d9bd;  /* hover / raised surface */
+  --ink: #241f3d;          /* primary text on light */
+  --ink-dim: #625a78;      /* secondary text */
+  --gold: #96681c;         /* gold leaf — accents, borders (deepened for light-bg contrast) */
+  --gold-bright: #b8862f;  /* brighter gold, used sparingly for fills */
+  --rubric: #a13f2b;       /* rubric red — dates & labels only, per scribal convention */
+  --sage: #4b6b4d;         /* illuminated border green */
+  --line: rgba(36, 31, 61, 0.14);
 
   --display-font: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
   --body-font: "Source Serif 4", Georgia, serif;
@@ -32,8 +33,8 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--ink);
-  color: var(--bone);
+  background: var(--parchment);
+  color: var(--ink);
   font-family: var(--body-font);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -52,7 +53,7 @@ a { color: inherit; }
   width: 100%;
   height: 28px;
   margin: 40px 0;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 .vine-divider svg { width: 100%; height: 100%; display: block; }
 
@@ -76,9 +77,10 @@ a { color: inherit; }
   font-size: clamp(40px, 7vw, 64px);
   margin: 0 0 8px;
   letter-spacing: 0.01em;
+  color: var(--ink);
 }
 .masthead-sub {
-  color: var(--bone-dim);
+  color: var(--ink-dim);
   font-size: 16px;
   margin: 0 0 24px;
 }
@@ -93,7 +95,7 @@ a { color: inherit; }
 }
 .masthead-nav a {
   text-decoration: none;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
   border-bottom: 1px solid transparent;
   padding-bottom: 3px;
   transition: color 0.15s, border-color 0.15s;
@@ -108,11 +110,12 @@ a { color: inherit; }
 
 .hero-card {
   position: relative;
-  background: var(--ink-2);
+  background: var(--parchment-2);
   border: 1px solid var(--line);
   border-radius: 2px;
   padding: 44px 40px;
   text-align: center;
+  box-shadow: 0 1px 2px rgba(36, 31, 61, 0.05);
 }
 .hero-card::before {
   content: "";
@@ -135,11 +138,11 @@ a { color: inherit; }
   font-weight: 600;
   font-size: clamp(32px, 5vw, 46px);
   margin: 0 0 12px;
-  color: var(--bone);
+  color: var(--ink);
 }
 .hero-tagline {
   font-size: 18px;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
   max-width: 46ch;
   margin: 0 auto 22px;
 }
@@ -157,7 +160,8 @@ a { color: inherit; }
   padding: 5px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
+  background: var(--parchment);
 }
 .chip:empty { display: none; }
 .chip-rubric { color: var(--rubric); border-color: color-mix(in srgb, var(--rubric) 40%, transparent); }
@@ -168,23 +172,23 @@ a { color: inherit; }
   font-size: 13px;
   letter-spacing: 0.04em;
   text-decoration: none;
-  color: var(--ink);
+  color: var(--parchment);
   background: var(--gold);
   padding: 11px 20px;
   border-radius: 2px;
   transition: filter 0.15s;
 }
-.hero-link:hover { filter: brightness(1.1); }
+.hero-link:hover { filter: brightness(1.15); }
 
 .hero-empty, .archive-empty {
   text-align: center;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
   padding: 40px 0;
 }
 .hero-empty-sub { font-size: 14px; }
 .hero-empty code {
   font-family: var(--mono-font);
-  background: var(--ink-2);
+  background: var(--parchment-2);
   padding: 2px 6px;
   border-radius: 3px;
 }
@@ -196,7 +200,7 @@ a { color: inherit; }
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
   margin: 0 0 14px;
 }
 .week-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
@@ -210,12 +214,12 @@ a { color: inherit; }
 .week-date {
   font-family: var(--mono-font);
   font-size: 13px;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
   width: 64px;
   flex: none;
 }
 .week-row-active .week-date { color: var(--rubric); }
-.week-names a { text-decoration: none; border-bottom: 1px dotted var(--bone-dim); }
+.week-names a { text-decoration: none; border-bottom: 1px dotted var(--ink-dim); }
 .week-names a:hover { color: var(--gold); border-color: var(--gold); }
 
 /* -------- archive page -------- */
@@ -223,14 +227,14 @@ a { color: inherit; }
   width: 100%;
   margin: 32px 0 8px;
   padding: 12px 16px;
-  background: var(--ink-2);
+  background: var(--parchment-2);
   border: 1px solid var(--line);
   border-radius: 2px;
-  color: var(--bone);
+  color: var(--ink);
   font-family: var(--body-font);
   font-size: 15px;
 }
-.archive-filter::placeholder { color: var(--bone-dim); }
+.archive-filter::placeholder { color: var(--ink-dim); }
 .archive-filter:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
 
 .archive-month { margin: 36px 0; }
@@ -252,15 +256,15 @@ a { color: inherit; }
 .archive-card {
   display: block;
   text-decoration: none;
-  color: var(--bone);
-  background: var(--ink-2);
+  color: var(--ink);
+  background: var(--parchment-2);
   border: 1px solid var(--line);
   border-left: 3px solid var(--saint-primary, var(--gold));
   border-radius: 2px;
   padding: 16px 18px;
   transition: background 0.15s, transform 0.15s;
 }
-.archive-card:hover { background: var(--ink-3); transform: translateY(-1px); }
+.archive-card:hover { background: var(--parchment-3); transform: translateY(-1px); }
 .archive-date {
   display: block;
   font-family: var(--mono-font);
@@ -278,7 +282,7 @@ a { color: inherit; }
 .archive-tagline {
   display: block;
   font-size: 14px;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
 }
 .archive-card[hidden] { display: none; }
 
@@ -288,7 +292,7 @@ a { color: inherit; }
   padding: 32px 0 56px;
   margin-top: 40px;
   text-align: center;
-  color: var(--bone-dim);
+  color: var(--ink-dim);
   font-size: 13px;
 }
 .site-footer a { color: var(--gold); text-decoration: none; }
