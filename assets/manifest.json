@@ -1,0 +1,45 @@
+{
+  "_schema": {
+    "note": "Each entry describes one published saint page. feast_day is MM-DD in the primary tradition given (default: Catholic Church, Roman Rite, Ordinary Form unless noted). If a saint has multiple widely-recognized feast dates across traditions, list them in feast_days_other so the homepage can still surface the page on those days too.",
+    "fields": {
+      "slug": "lowercase-hyphenated id, matches saints/st-[slug].html and saints/previews/st-[slug].png",
+      "name": "full display name as it appears on the page",
+      "tagline": "the one-line thesis from the page hero",
+      "feast_day": "MM-DD, primary/Catholic feast date",
+      "feast_day_display": "human-readable date, e.g. 'August 3'",
+      "feast_day_tradition": "which calendar the primary date follows, e.g. 'Catholic Church (Roman Rite)'",
+      "feast_days_other": "array of {tradition, date, date_display} for other denominations, optional",
+      "patronage": "short patronage string for the fact chip",
+      "era": "short era string for the fact chip, e.g. '1st century'",
+      "colors": {"primary": "#hex", "accent": "#hex"},
+      "page": "relative path to the HTML page",
+      "preview": "relative path to the 1200x630 PNG",
+      "added": "YYYY-MM-DD this entry was added to the manifest",
+      "release_date": "OPTIONAL. YYYY-MM-DD (full date, not MM-DD). The saint stays completely invisible on the site -- no hero, no week strip, no archive card -- until local midnight of this date, then appears automatically and stays visible from then on. This is what lets you bulk-add many saints at once and have them post themselves on their assigned day. Falls back to `added` if omitted, so old entries without this field keep working unchanged. Note this is a one-time real-world release gate, separate from `feast_day` (which is the recurring MM-DD used every year for the homepage's 'feast day today' match)."
+    }
+  },
+  "saints": [
+    {
+      "slug": "lydia",
+      "name": "St. Lydia of Thyatira",
+      "tagline": "The purple-dye merchant whose opened heart opened the first door of the Church in Europe",
+      "feast_day": "08-03",
+      "feast_day_display": "August 3",
+      "feast_day_tradition": "Catholic Church (Extraordinary Form) / widely cited general Catholic date",
+      "feast_days_other": [
+        {"tradition": "Catholic Church (Ordinary Form, Roman Rite)", "date": "05-20", "date_display": "May 20"},
+        {"tradition": "Eastern Orthodox Church (most jurisdictions)", "date": "05-20", "date_display": "May 20"},
+        {"tradition": "Episcopal Church (USA)", "date": "01-27", "date_display": "January 27"},
+        {"tradition": "ELCA (Lutheran)", "date": "01-27", "date_display": "January 27"},
+        {"tradition": "LCMS (Lutheran)", "date": "10-25", "date_display": "October 25"}
+      ],
+      "patronage": "Dyers",
+      "era": "1st century",
+      "colors": {"primary": "#4b2e6b", "accent": "#c9862f"},
+      "page": "saints/st-lydia.html",
+      "preview": "saints/previews/st-lydia.png",
+      "added": "2026-08-03",
+      "release_date": "2026-08-03"
+    }
+  ]
+}
