@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Lydia of Thyatira — The Dye Merchant Who Opened a Door</title>
+<meta name="description" content="The purple-dye merchant whose opened heart opened the first door of the Church in Europe. Her story, her feast day, and why she still matters.">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="St. Lydia of Thyatira">
+<meta property="og:description" content="The purple-dye merchant whose opened heart opened the first door of the Church in Europe.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-lydia.png">
+<meta property="og:url" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/st-lydia.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="St. Lydia of Thyatira">
+<meta name="twitter:description" content="The purple-dye merchant whose opened heart opened the first door of the Church in Europe.">
+<meta name="twitter:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-lydia.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Literata:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --tyrian: #4b2e6b;
+    --murex: #6c3f8f;
+    --amethyst-pale: #b79bcf;
+    --amethyst-mist: #e4d9ee;
+    --saffron: #c9862f;
+    --saffron-light: #e7b876;
+    --parchment: #f5efe4;
+    --parchment-deep: #ece2d0;
+    --ink: #241a2e;
+    --ink-soft: #4a3f52;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family: 'Literata', Georgia, serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  h1,h2,h3{ font-family:'Fraunces', Georgia, serif; font-weight:600; margin:0 0 .4em; color: var(--tyrian); }
+  a{ color: var(--murex); }
+  .label{ font-family:'Space Mono', monospace; text-transform:uppercase; letter-spacing:.12em; font-size:.72rem; color: var(--ink-soft); }
+
+  .wrap{ max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* ===== Dye Ladder (signature element) =====
+     A vertical rail of dye-vat swatches, pale amethyst deepening to
+     Tyrian purple, ending in a single saffron rung for the moment her
+     heart was "opened." Mirrors her trade: cloth dipped again and again
+     until the color took. Doubles as a scroll progress / section index. */
+  .dye-ladder{
+    position: fixed;
+    top: 0; bottom: 0; left: 0;
+    width: 14px;
+    display: flex; flex-direction: column;
+    z-index: 40;
+  }
+  .dye-ladder .rung{ flex: 1; position: relative; }
+  .dye-ladder .rung::after{
+    content: attr(data-n);
+    position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+    font-family:'Space Mono', monospace; font-size: .65rem; color: var(--parchment);
+    background: var(--ink); padding: 3px 7px; border-radius: 2px;
+    opacity: 0; transition: opacity .2s ease; white-space: nowrap; pointer-events:none;
+  }
+  .dye-ladder .rung.active::after{ opacity: .92; }
+  .dye-ladder .rung.active{ box-shadow: inset -3px 0 0 var(--saffron); }
+  @media (max-width: 640px){ .dye-ladder{ display:none; } }
+
+  /* ===== Masthead / Hero ===== */
+  .hero{
+    position: relative;
+    padding: 96px 0 72px;
+    background:
+      radial-gradient(700px 400px at 15% -10%, rgba(201,134,47,.16), transparent 60%),
+      linear-gradient(180deg, #2f1c45 0%, var(--tyrian) 46%, var(--murex) 100%);
+    color: var(--parchment);
+    overflow: hidden;
+  }
+  .hero .wrap{ position: relative; z-index: 2; }
+  .hero-eyebrow{ color: var(--saffron-light); margin-bottom: 18px; display:flex; gap:10px; align-items:center; }
+  .hero-eyebrow .rule{ width: 28px; height: 1px; background: var(--saffron-light); display:inline-block; }
+  .hero h1{ color: #fbf6ec; font-size: clamp(2.4rem, 6vw, 3.6rem); line-height: 1.05; letter-spacing: -.01em; }
+  .hero .tagline{ font-size: 1.18rem; color: var(--amethyst-mist); max-width: 46ch; margin-top: 18px; font-style: italic; }
+  .hero-chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top: 32px; }
+  .chip{
+    font-family:'Space Mono', monospace; font-size:.74rem; letter-spacing:.03em;
+    border: 1px solid rgba(245,239,228,.35); color: #f2e9d8;
+    padding: 6px 12px; border-radius: 999px; background: rgba(0,0,0,.08);
+  }
+  .chip.chip-gold{ border-color: var(--saffron); color: var(--saffron-light); }
+
+  /* Hero art: an amphora tipping purple dye into cloth, all inline SVG */
+  .hero-art{ margin-top: 44px; max-width: 340px; }
+
+  /* ===== Sections ===== */
+  section.content{ padding: 68px 0; }
+  section.content .label{ margin-bottom: 10px; }
+  section.content h2{ font-size: clamp(1.5rem, 3.4vw, 2rem); }
+  .lede{ font-size: 1.08rem; color: var(--ink-soft); max-width: 62ch; }
+  p{ max-width: 68ch; }
+
+  /* Dip-stripe divider: a literal gradient swatch strip between sections */
+  .dip-stripe{ height: 10px; background: linear-gradient(90deg, var(--amethyst-mist), var(--amethyst-pale) 35%, var(--murex) 68%, var(--tyrian) 100%); }
+  .dip-stripe.gold-end{ background: linear-gradient(90deg, var(--tyrian), var(--murex) 55%, var(--saffron) 100%); }
+
+  /* Primary source / ledger block */
+  .ledger{
+    background: var(--parchment-deep);
+    border: 1px solid rgba(75,46,107,.18);
+    border-left: 4px solid var(--tyrian);
+    padding: 32px 30px;
+    margin: 28px 0;
+    position: relative;
+  }
+  .ledger .verse-num{
+    font-family:'Space Mono', monospace; font-size:.72rem; color: var(--saffron);
+    display:block; margin-bottom: 10px; letter-spacing:.08em;
+  }
+  .ledger blockquote{
+    margin:0; font-family:'Fraunces', Georgia, serif; font-style: italic; font-weight:500;
+    font-size: 1.28rem; line-height:1.55; color: var(--tyrian);
+  }
+  .ledger cite{ display:block; margin-top:16px; font-style:normal; font-family:'Space Mono', monospace; font-size:.78rem; color: var(--ink-soft); }
+
+  .callout{
+    background: linear-gradient(135deg, var(--tyrian), var(--murex));
+    color: var(--parchment);
+    padding: 30px 30px;
+    border-radius: 2px;
+    margin: 28px 0;
+  }
+  .callout h3{ color: var(--saffron-light); font-size: 1.15rem; }
+  .callout p{ color: var(--amethyst-mist); margin-bottom:0; max-width:none; }
+
+  /* Vat swatches inline row, used in "Her World" section */
+  .vat-row{ display:flex; gap:8px; margin: 26px 0 8px; flex-wrap:wrap; }
+  .vat{ width:44px; height:44px; border-radius:3px; flex-shrink:0; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+  .vat-row .vat:nth-child(1){ background: var(--amethyst-mist); }
+  .vat-row .vat:nth-child(2){ background: var(--amethyst-pale); }
+  .vat-row .vat:nth-child(3){ background: var(--murex); }
+  .vat-row .vat:nth-child(4){ background: var(--tyrian); }
+  .vat-row .vat:nth-child(5){ background: #2f1c45; }
+  .vat-caption{ font-family:'Space Mono', monospace; font-size:.68rem; color: var(--ink-soft); letter-spacing:.05em; }
+
+  /* Watch section */
+  .watch-grid{ display:grid; grid-template-columns: 1fr; gap: 26px; margin-top: 22px; }
+  @media(min-width:640px){ .watch-grid{ grid-template-columns: 1fr 1fr; } }
+  .video-frame{ position:relative; padding-top:56.25%; background:var(--ink); border-radius:2px; overflow:hidden; }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-cap{ font-family:'Space Mono', monospace; font-size:.72rem; color:var(--ink-soft); margin-top:10px; }
+
+  footer.site-footer{
+    background: var(--ink); color: var(--amethyst-mist);
+    padding: 46px 0 60px; margin-top: 20px;
+  }
+  footer.site-footer a{ color: var(--saffron-light); }
+  footer.site-footer .feast-list{ list-style:none; padding:0; margin: 14px 0 0; font-family:'Space Mono', monospace; font-size:.78rem; }
+  footer.site-footer .feast-list li{ padding: 4px 0; border-bottom: 1px dashed rgba(245,239,228,.15); display:flex; justify-content:space-between; max-width:480px; }
+  .back-link{ display:inline-block; margin-top:26px; font-family:'Space Mono', monospace; font-size:.82rem; }
+</style>
+</head>
+<body>
+
+<nav class="dye-ladder" id="dye-ladder" aria-hidden="true">
+  <div class="rung" data-n="Hero" style="background:var(--amethyst-mist)"></div>
+  <div class="rung" data-n="Her World" style="background:var(--amethyst-pale)"></div>
+  <div class="rung" data-n="The Riverside" style="background:#8a5aa8"></div>
+  <div class="rung" data-n="The Source" style="background:var(--murex)"></div>
+  <div class="rung" data-n="Opened Heart" style="background:#5a3878"></div>
+  <div class="rung" data-n="Her House" style="background:var(--tyrian)"></div>
+  <div class="rung" data-n="Watch" style="background:var(--saffron)"></div>
+</nav>
+
+<header class="hero" id="sec-hero">
+  <div class="wrap">
+    <p class="hero-eyebrow"><span class="rule"></span>SAINT OF THE DAY &middot; 1ST CENTURY</p>
+    <h1>St. Lydia of Thyatira</h1>
+    <p class="tagline">The purple-dye merchant whose opened heart opened the first door of the Church in Europe.</p>
+    <div class="hero-chips">
+      <span class="chip chip-gold">Feast Aug 3 (also May 20 &middot; Jan 27 &middot; Oct 25)</span>
+      <span class="chip">Patron of dyers</span>
+      <span class="chip">Philippi, Macedonia</span>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- river -->
+        <path d="M0,168 C60,158 90,178 150,166 C210,154 250,174 340,160 L340,200 L0,200 Z" fill="#2f1c45" opacity="0.6"/>
+        <path d="M0,178 C60,170 90,186 150,176 C210,166 250,182 340,172 L340,200 L0,200 Z" fill="#1f1230" opacity="0.7"/>
+        <!-- amphora -->
+        <g transform="translate(58,40) rotate(18)">
+          <path d="M0,0 C-4,10 -4,20 6,24 L26,24 C36,20 36,10 32,0 C30,-6 6,-6 0,0 Z" fill="#c9862f"/>
+          <rect x="14" y="-10" width="10" height="12" fill="#c9862f"/>
+          <path d="M2,2 C0,10 0,18 8,22" stroke="#7a5320" stroke-width="1.5" fill="none"/>
+        </g>
+        <!-- dye stream -->
+        <path d="M92,60 C110,80 96,96 118,116 C136,132 118,150 140,168" stroke="url(#stream)" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="stream" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#c9862f"/>
+            <stop offset="1" stop-color="#4b2e6b"/>
+          </linearGradient>
+        </defs>
+        <!-- cloth swatches drying -->
+        <rect x="150" y="70" width="26" height="70" rx="2" fill="#e4d9ee" transform="rotate(-4 163 105)"/>
+        <rect x="182" y="60" width="26" height="80" rx="2" fill="#b79bcf" transform="rotate(3 195 100)"/>
+        <rect x="216" y="72" width="26" height="66" rx="2" fill="#6c3f8f" transform="rotate(-2 229 105)"/>
+        <rect x="250" y="64" width="26" height="76" rx="2" fill="#4b2e6b" transform="rotate(4 263 102)"/>
+        <!-- line for drying rack -->
+        <line x1="140" y1="58" x2="290" y2="58" stroke="#c9862f" stroke-width="2"/>
+        <circle cx="140" cy="58" r="3" fill="#c9862f"/>
+        <circle cx="290" cy="58" r="3" fill="#c9862f"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="dip-stripe" aria-hidden="true"></div>
+
+<main>
+
+  <section class="content" id="sec-world">
+    <div class="wrap">
+      <p class="label">01 &middot; Her World</p>
+      <h2>Thyatira, and the Color That Cost a Fortune</h2>
+      <p class="lede">Long before she was a name in a letter, Lydia was a name on a ledger — a dealer in the most expensive textile in the ancient Mediterranean.</p>
+      <p>Lydia came from Thyatira, a city in the region of Lydia in Asia Minor (modern Akhisar, Turkey), famous across the ancient world for its dye works. She had since relocated to Philippi, a Roman colony in Macedonia, where she ran her own trade in purple cloth — likely produced from the root-based dye the region was known for, a cheaper cousin of the famous Tyrian purple pressed from murex sea snails, but still a luxury few could afford. Purple dye was so costly to produce that it was reserved for royalty, magistrates, and the wealthiest households; a merchant who dealt in it at any scale was doing very well for herself.</p>
+      <p>That she is named without a husband, father, or master — unusual for a woman in Luke's account — combined with the fact that she headed a household large enough to host traveling missionaries, suggests a woman of real independent means: quite possibly a widow, or a former slave who had built her own business inside the dye trade she once served.</p>
+
+      <div class="vat-row" aria-hidden="true">
+        <div class="vat"></div><div class="vat"></div><div class="vat"></div><div class="vat"></div><div class="vat"></div>
+      </div>
+      <p class="vat-caption">DYE VATS, LIGHT TO DARK — cloth was dipped again and again until the color held</p>
+    </div>
+  </section>
+
+  <div class="dip-stripe" aria-hidden="true"></div>
+
+  <section class="content" id="sec-riverside">
+    <div class="wrap">
+      <p class="label">02 &middot; The Riverside</p>
+      <h2>A Sabbath by the Water</h2>
+      <p>Philippi had no synagogue — likely too few Jewish men to form the minimum quorum required to establish one. So on the Sabbath, the women who worshipped God gathered instead at a spot outside the city gate, by the river Gangites, where it was custom to pray.</p>
+      <p>It was there that the apostle Paul, on what became known as his second missionary journey, sat down with them and began to speak. Among the women listening was Lydia. Luke's account gives her only a few lines, but they are among the most consequential in the book of Acts: this ordinary riverside conversation, with a working businesswoman on a Sabbath afternoon, is the first recorded encounter between the Gospel and the European continent.</p>
+
+      <div class="callout">
+        <h3>Why this moment matters</h3>
+        <p>Every westward expansion of the early Church — every congregation from Rome to Britain to the Americas — has a starting point. Historically, that point is a riverbank outside Philippi, and a merchant named Lydia who happened to be listening.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="dip-stripe" aria-hidden="true"></div>
+
+  <section class="content" id="sec-source">
+    <div class="wrap">
+      <p class="label">03 &middot; The Primary Source</p>
+      <h2>What Luke Actually Wrote</h2>
+      <p>The account appears in the Acts of the Apostles, written by Luke as a companion narrative to his Gospel. This is the full passage, in the language of the Authorized (King James) translation:</p>
+
+      <div class="ledger">
+        <span class="verse-num">ACTS 16:14&ndash;15</span>
+        <blockquote>
+          &ldquo;And a certain woman named Lydia, a seller of purple, of the city of Thyatira, which worshipped God, heard us: whose heart the Lord opened, that she attended unto the things which were spoken of Paul. And when she was baptized, and her household, she besought us, saying, If ye have judged me to be faithful to the Lord, come into my house, and abide there. And she constrained us.&rdquo;
+        </blockquote>
+        <cite>Acts of the Apostles 16:14&ndash;15, King James Version (public domain)</cite>
+      </div>
+
+      <p>Two details are easy to read past. First, the verb tense: it is <em>the Lord</em> who opens her heart — not Lydia who talks herself into belief. Second, the word <em>constrained</em>: she does not politely offer hospitality, she insists on it, refusing to take no for an answer from men she had known for perhaps an hour.</p>
+    </div>
+  </section>
+
+  <div class="dip-stripe" aria-hidden="true"></div>
+
+  <section class="content" id="sec-heart">
+    <div class="wrap">
+      <p class="label">04 &middot; The Opened Heart</p>
+      <h2>A Door, Not a Decision</h2>
+      <p>Scripture is careful about who does the opening. Lydia is described as already "a worshipper of God" — a Gentile drawn to the ethical monotheism of Judaism, without having taken the formal step of conversion. She was, by every account, already searching. But Luke doesn't credit her searching with what happens next. He writes that the Lord opened her heart to respond — the same architecture used elsewhere in Acts to describe conversion as something that happens <em>to</em> a person as much as something they choose.</p>
+      <p>It's a small theological detail with a large practical one attached: Lydia's faith is presented as neither pure passivity nor pure willpower, but as a door that swings open from both sides at once. She was listening. Something opened. She acted immediately — not just for herself, but her whole household was baptized alongside her the same day.</p>
+    </div>
+  </section>
+
+  <div class="dip-stripe gold-end" aria-hidden="true"></div>
+
+  <section class="content" id="sec-house">
+    <div class="wrap">
+      <p class="label">05 &middot; Her House, Her Church</p>
+      <h2>The First Address of the Church in Europe</h2>
+      <p>Lydia's insistence that Paul and his companions stay at her home was not a small social gesture. In Roman Philippi, a home like hers — large enough, and hers alone to offer — became the meeting place for what was almost certainly the first Christian congregation on European soil. When Paul and Silas were later released from prison in the same city (Acts 16:40), the first place they went was back to Lydia's house, where believers had already gathered.</p>
+      <p>She disappears from the text after that. No death date, no later chapter, no recorded words beyond that one insistent invitation. And yet what she started — a household turned into a church, built on a single afternoon's hospitality — outlasted her by two thousand years.</p>
+
+      <div class="callout">
+        <h3>Patron of dyers</h3>
+        <p>Because Luke bothered to record her trade at all, Lydia became, centuries later, the patron saint invoked by dyers and textile workers — one of a small number of saints whose patronage traces back to a single incidental detail in an ancient text, rather than to a legend built around it.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="dip-stripe" aria-hidden="true"></div>
+
+  <section class="content" id="sec-watch">
+    <div class="wrap">
+      <p class="label">06 &middot; Watch &amp; Reflect</p>
+      <h2>Two Ways Into Her Story</h2>
+      <p class="lede">If you'd rather listen than read, these two studies walk through the same riverside scene from different angles.</p>
+      <div class="watch-grid">
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/Cx-nM0WUIj0" title="Lydia: From Listener to Believer — Acts 16:13-15" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <p class="video-cap">"Lydia: From Listener to Believer" — a walkthrough of Acts 16:13&ndash;15.</p>
+        </div>
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/CsmleShIBTM" title="Acts 16: Lydia's Story" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <p class="video-cap">"Acts 16: Lydia's Story" — on why Luke chose to record her conversion in detail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="sec-footer">
+  <div class="wrap">
+    <p class="label" style="color:var(--saffron-light)">Feast Day, by Tradition</p>
+    <ul class="feast-list">
+      <li><span>Catholic Church (Extraordinary Form)</span><span>August 3</span></li>
+      <li><span>Catholic Church (Ordinary Form, Roman Rite)</span><span>May 20</span></li>
+      <li><span>Eastern Orthodox Church (most jurisdictions)</span><span>May 20</span></li>
+      <li><span>Episcopal Church (USA)</span><span>January 27</span></li>
+      <li><span>ELCA (Lutheran)</span><span>January 27</span></li>
+      <li><span>LCMS (Lutheran)</span><span>October 25</span></li>
+    </ul>
+    <a class="back-link" href="../archive.html">&larr; Back to the full archive</a>
+    &nbsp;&middot;&nbsp;
+    <a class="back-link" href="../index.html">Today's saint</a>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var rungs = document.querySelectorAll('.dye-ladder .rung');
+    var ids = ['sec-hero','sec-world','sec-riverside','sec-source','sec-heart','sec-house','sec-watch'];
+    var sections = ids.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+    if (!rungs.length || !sections.length) return;
+
+    function onScroll(){
+      var y = window.scrollY + window.innerHeight * 0.35;
+      var activeIdx = 0;
+      sections.forEach(function(sec, i){
+        if (sec.offsetTop <= y) activeIdx = i;
+      });
+      rungs.forEach(function(r, i){ r.classList.toggle('active', i === activeIdx); });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    rungs.forEach(function(r, i){
+      r.style.cursor = 'pointer';
+      r.addEventListener('click', function(){
+        if (sections[i]) sections[i].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
