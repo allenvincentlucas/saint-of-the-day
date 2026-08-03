@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ordo — Saint of the Day</title>
+<meta name="description" content="A daily saint, drawn from an ever-growing archive: their story, their feast day, and why they still matter.">
+
+<!-- Open Graph / social -->
+<meta property="og:title" content="The Ordo — Saint of the Day">
+<meta property="og:description" content="A daily saint, drawn from an ever-growing archive: their story, their feast day, and why they still matter.">
+<meta property="og:type" content="website">
+<!-- og:image intentionally omitted on the hub pages: the saint shown here
+     changes daily, so there is no single fixed preview image. Each
+     saints/st-*.html page carries its own og:image (see Section 6 /
+     CONTRIBUTING.md). -->
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/hub.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="masthead-kicker" id="today-label">&nbsp;</p>
+    <h1 class="masthead-title">The Ordo</h1>
+    <p class="masthead-sub">One saint a day, told from their own story — not a template.</p>
+    <nav class="masthead-nav">
+      <a href="index.html" aria-current="page">Today</a>
+      <a href="archive.html">Full Archive</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero-region" id="hero-region" aria-live="polite">
+    <!-- populated by assets/saint-of-the-day.js -->
+    <div class="hero-empty"><p>Loading today&rsquo;s saint&hellip;</p></div>
+  </section>
+
+  <div class="vine-divider" aria-hidden="true">
+    <svg viewBox="0 0 900 28" preserveAspectRatio="none">
+      <path d="M0,14 C150,2 150,26 300,14 C450,2 450,26 600,14 C750,2 750,26 900,14"
+            fill="none" stroke="var(--sage)" stroke-width="1.5"/>
+      <circle cx="150" cy="14" r="3" fill="var(--gold)"/>
+      <circle cx="450" cy="14" r="3" fill="var(--gold)"/>
+      <circle cx="750" cy="14" r="3" fill="var(--gold)"/>
+    </svg>
+  </div>
+
+  <section class="week-region">
+    <p class="week-title">This week&rsquo;s feast days</p>
+    <ul class="week-list" id="week-list"></ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Built page by page, saint by saint. See the <a href="archive.html">full archive</a> or read how pages are added in <a href="https://github.com/">CONTRIBUTING.md</a>.</p>
+  </div>
+</footer>
+
+<script src="assets/saint-of-the-day.js"></script>
+<script>
+  (async function () {
+    const dateLabel = document.getElementById("today-label");
+    const now = new Date();
+    dateLabel.textContent = now.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric" });
+
+    try {
+      const saints = await loadManifest();
+      renderHero(document.getElementById("hero-region"), saints);
+      renderWeekStrip(document.getElementById("week-list"), saints);
+    } catch (err) {
+      document.getElementById("hero-region").innerHTML =
+        '<div class="hero-empty"><p>Could not load the saint archive right now.</p></div>';
+      console.error(err);
+    }
+  })();
+</script>
+
+</body>
+</html>
