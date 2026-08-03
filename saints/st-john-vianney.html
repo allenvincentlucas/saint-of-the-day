@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. John Vianney — The Great Hospital of Souls</title>
+<meta name="description" content="The parish priest who turned a forgotten village into a hospital for souls, one confession at a time. His story, his feast day, and why he still matters.">
+
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/favicon-180.png">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="St. John Vianney">
+<meta property="og:description" content="The parish priest who turned a forgotten village into a hospital for souls, one confession at a time.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-john-vianney.png">
+<meta property="og:url" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/st-john-vianney.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="St. John Vianney">
+<meta name="twitter:description" content="The parish priest who turned a forgotten village into a hospital for souls, one confession at a time.">
+<meta name="twitter:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-john-vianney.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Cutive+Mono&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cassock: #1c1a18;
+    --cassock-2: #26221e;
+    --oak: #5c3d24;
+    --oak-light: #8a6238;
+    --candle: #e8a33d;
+    --candle-glow: #f4c874;
+    --parchment: #f3ead8;
+    --parchment-2: #ece0c8;
+    --ash: #7d6a58;
+    --ink: #2a2118;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--parchment);
+    color: var(--ink);
+    font-family:'Lora', Georgia, serif;
+    line-height:1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation:none !important; transition:none !important; }
+  }
+
+  h1,h2,h3{ font-family:'Vollkorn', Georgia, serif; font-weight:600; margin:0 0 .4em; color: var(--oak); }
+  a{ color: var(--oak); }
+  .label{ font-family:'Cutive Mono', monospace; text-transform:uppercase; letter-spacing:.13em; font-size:.72rem; color: var(--ash); }
+
+  .wrap{ max-width:760px; margin:0 auto; padding:0 24px; }
+
+  /* ===== The Worn Threshold (signature element) =====
+     A shallow, uneven groove — like a stone step worn hollow by
+     thousands of pilgrims' feet over decades. Used as the section
+     divider throughout: unglamorous, literal, load-bearing. */
+  .worn-threshold{ height:14px; margin: 0 auto; position:relative; }
+  .worn-threshold svg{ width:100%; height:100%; display:block; }
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    padding: 100px 0 76px;
+    background:
+      radial-gradient(600px 360px at 20% 110%, rgba(232,163,61,.22), transparent 65%),
+      linear-gradient(180deg, #14120f 0%, var(--cassock) 55%, var(--cassock-2) 100%);
+    color: var(--parchment);
+    overflow:hidden;
+  }
+  .hero .wrap{ position:relative; z-index:2; }
+  .hero-eyebrow{ color: var(--candle); margin-bottom:18px; display:flex; gap:10px; align-items:center; font-family:'Cutive Mono',monospace; font-size:.75rem; letter-spacing:.13em; text-transform:uppercase; }
+  .hero-eyebrow .rule{ width:28px; height:1px; background: var(--candle); display:inline-block; }
+  .hero h1{ color:#f8efd9; font-size: clamp(2.2rem, 6vw, 3.3rem); line-height:1.1; }
+  .hero .tagline{ font-size:1.14rem; color:#d8c9ab; max-width:48ch; margin-top:18px; font-style:italic; }
+  .hero-chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:32px; }
+  .chip{
+    font-family:'Cutive Mono', monospace; font-size:.74rem; letter-spacing:.02em;
+    border:1px solid rgba(243,234,216,.3); color:#ecdfc3;
+    padding:6px 12px; border-radius:2px; background: rgba(0,0,0,.18);
+  }
+  .chip.chip-gold{ border-color: var(--candle); color: var(--candle-glow); }
+
+  .hero-art{ margin-top:44px; max-width:300px; }
+
+  /* ===== Sections ===== */
+  section.content{ padding:64px 0; }
+  section.content h2{ font-size: clamp(1.4rem, 3.2vw, 1.9rem); }
+  .lede{ font-size:1.05rem; color:#4c4032; max-width:62ch; }
+  p{ max-width:68ch; }
+
+  /* Primary source: confessional-wood block with candlelight edge */
+  .confessional{
+    background: var(--cassock);
+    color: var(--parchment);
+    border-left: 4px solid var(--candle);
+    padding: 32px 30px;
+    margin: 28px 0;
+    position: relative;
+  }
+  .confessional .ref{ font-family:'Cutive Mono', monospace; font-size:.72rem; color: var(--candle-glow); display:block; margin-bottom:12px; letter-spacing:.06em; }
+  .confessional blockquote{ margin:0; font-family:'Vollkorn', Georgia, serif; font-style:italic; font-weight:500; font-size:1.12rem; line-height:1.6; color:#f4ead2; }
+  .confessional cite{ display:block; margin-top:16px; font-style:normal; font-family:'Cutive Mono', monospace; font-size:.76rem; color:#c9b791; }
+
+  .callout{
+    background: linear-gradient(135deg, var(--oak), #40290f);
+    color: var(--parchment);
+    padding: 30px 30px;
+    border-radius: 2px;
+    margin: 28px 0;
+  }
+  .callout h3{ color: var(--candle-glow); font-size:1.08rem; }
+  .callout p{ color:#e6d7bd; margin-bottom:0; max-width:none; }
+
+  /* candle-flame glyph, used sparingly to mark turning points */
+  .flame-mark{ display:flex; justify-content:center; margin:30px 0; opacity:.7; }
+
+  .watch-grid{ display:grid; grid-template-columns:1fr; gap:26px; margin-top:22px; }
+  @media(min-width:640px){ .watch-grid{ grid-template-columns:1fr 1fr; } }
+  .video-frame{ position:relative; padding-top:56.25%; background:var(--cassock); border-radius:2px; overflow:hidden; }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-cap{ font-family:'Cutive Mono', monospace; font-size:.72rem; color:#4c4032; margin-top:10px; }
+
+  footer.site-footer{
+    background: var(--cassock); color:#c9b791;
+    padding: 46px 0 60px; margin-top:20px;
+  }
+  footer.site-footer a{ color: var(--candle-glow); }
+  footer.site-footer .feast-list{ list-style:none; padding:0; margin:14px 0 0; font-family:'Cutive Mono', monospace; font-size:.78rem; }
+  footer.site-footer .feast-list li{ padding:4px 0; border-bottom:1px dashed rgba(243,234,216,.15); display:flex; justify-content:space-between; max-width:480px; }
+  .back-link{ display:inline-block; margin-top:26px; font-family:'Cutive Mono', monospace; font-size:.82rem; }
+</style>
+</head>
+<body>
+
+<header class="hero" id="sec-hero">
+  <div class="wrap">
+    <p class="hero-eyebrow"><span class="rule"></span>SAINT OF THE DAY &middot; 19TH CENTURY</p>
+    <h1>St. John Vianney</h1>
+    <p class="tagline">The parish priest who turned a forgotten village into "the great hospital of souls," one confession at a time.</p>
+    <div class="hero-chips">
+      <span class="chip chip-gold">Feast August 4</span>
+      <span class="chip">Patron of parish priests</span>
+      <span class="chip">Ars, France &middot; 1786&ndash;1859</span>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="candleGlow" cx="50%" cy="60%" r="60%">
+            <stop offset="0" stop-color="#f4c874" stop-opacity="0.9"/>
+            <stop offset="1" stop-color="#f4c874" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- confessional booth silhouette -->
+        <rect x="90" y="40" width="120" height="140" rx="4" fill="#26221e" stroke="#5c3d24" stroke-width="3"/>
+        <rect x="115" y="70" width="70" height="90" fill="#14120f"/>
+        <!-- small grille/lattice on the confessional window -->
+        <g stroke="#5c3d24" stroke-width="1.5" opacity="0.7">
+          <line x1="130" y1="70" x2="130" y2="160"/>
+          <line x1="150" y1="70" x2="150" y2="160"/>
+          <line x1="170" y1="70" x2="170" y2="160"/>
+          <line x1="115" y1="90" x2="185" y2="90"/>
+          <line x1="115" y1="115" x2="185" y2="115"/>
+          <line x1="115" y1="140" x2="185" y2="140"/>
+        </g>
+        <!-- candle glow spilling from within -->
+        <ellipse cx="150" cy="115" rx="55" ry="70" fill="url(#candleGlow)"/>
+        <!-- kneeler step, worn -->
+        <path d="M70,180 C110,176 190,176 230,180 L230,188 C190,184 110,184 70,188 Z" fill="#5c3d24"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="worn-threshold" aria-hidden="true">
+  <svg viewBox="0 0 700 14" preserveAspectRatio="none">
+    <path d="M0,7 C100,4 150,11 250,6 C350,2 400,10 500,5 C580,2 640,9 700,6" stroke="#8a6238" stroke-width="2" fill="none" opacity="0.55"/>
+  </svg>
+</div>
+
+<main>
+
+  <section class="content" id="sec-who">
+    <div class="wrap">
+      <p class="label">01 &middot; Who He Was</p>
+      <h2>A Farm Boy Who Almost Failed the Priesthood</h2>
+      <p class="lede">He grew up making his First Communion in secret, in a barn, because the Revolution had made the Mass a crime. He would spend the rest of his life trying to undo what that had done to people's faith.</p>
+      <p>Jean-Baptiste-Marie Vianney was born on May 8, 1786, in Dardilly, near Lyon, the fourth of six children in a devout peasant farming family. He came of age during the French Revolution, when priests were hunted and the sacraments had to be celebrated underground — an experience that left him with a lifelong, almost desperate reverence for the priesthood he'd seen his community risk everything to keep.</p>
+      <p>His path to ordination was nearly derailed by his own education, or the lack of it: Latin, the language of seminary instruction, defeated him repeatedly, and he was dismissed from formal studies more than once. Only the persistent advocacy of his mentor, Father Balley, and the seminary's own doubts being overruled by a bishop who was told simply that the young man "prayed the rosary like an angel," got him ordained in 1815, at the age of 29.</p>
+    </div>
+  </section>
+
+  <div class="worn-threshold" aria-hidden="true">
+    <svg viewBox="0 0 700 14" preserveAspectRatio="none">
+      <path d="M0,6 C100,10 150,3 250,7 C350,11 400,3 500,7 C580,10 640,4 700,7" stroke="#8a6238" stroke-width="2" fill="none" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-moment">
+    <div class="wrap">
+      <p class="label">02 &middot; The Defining Moment</p>
+      <h2>Ars, 1818: A Village of Two Hundred Souls</h2>
+      <p>In 1818, Father Vianney was sent to Ars, a farming hamlet of roughly 230 residents so unremarkable that his own bishop reportedly told him he'd find "little love of God" there — and that it would be his job to put it back. Religious practice in the village had gone cold in the decades since the Revolution; taverns outnumbered any visible piety.</p>
+      <p>He set about the work with a severity aimed almost entirely at himself: extreme personal fasting, punishing penances, and a relentless, visible dedication to his parishioners — visiting the poorest families, restoring the church, closing the taverns one by one not by decree but by simply out-loving the alternative they offered. Within a decade, Ars had become something nobody could have predicted: a place people traveled toward, not away from.</p>
+
+      <div class="flame-mark" aria-hidden="true">
+        <svg width="20" height="30" viewBox="0 0 20 30">
+          <path d="M10,2 C4,10 2,16 6,21 C4,17 6,14 8,13 C7,18 12,20 12,25 C12,27 10,28 8,28 C13,29 17,25 16,20 C15,15 10,12 10,2 Z" fill="#e8a33d"/>
+        </svg>
+      </div>
+
+      <p>It was also around this time that Vianney began to be tormented at night by disturbances he attributed to the devil, whom he nicknamed, half-wearily, "the Grappin" — noises, thrown furniture, and on at least one occasion his own bed reportedly set alight. He took the harassment less as a burden than as a kind of confirmation: as he was fond of saying to fellow priests, the devil troubles hardest the ground where the most good is being done.</p>
+    </div>
+  </section>
+
+  <div class="worn-threshold" aria-hidden="true">
+    <svg viewBox="0 0 700 14" preserveAspectRatio="none">
+      <path d="M0,7 C100,4 150,11 250,6 C350,2 400,10 500,5 C580,2 640,9 700,6" stroke="#8a6238" stroke-width="2" fill="none" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-source">
+    <div class="wrap">
+      <p class="label">03 &middot; The Primary Source</p>
+      <h2>What He Actually Preached</h2>
+      <p>Vianney's sermons were plain, direct, and aimed squarely at the ordinary spiritual laziness he saw as more dangerous than dramatic sin. This passage, from his recorded sermons on prayer, is preserved in the public-domain 19th-century English collection of his preaching:</p>
+
+      <div class="confessional">
+        <span class="ref">FROM THE SERMONS OF THE CUR&Eacute; OF ARS</span>
+        <blockquote>
+          &ldquo;I think, brethren, that you would like to know what is the state of the lukewarm soul. Well, this is it. A lukewarm soul is not yet quite dead in the eyes of God because the faith, the hope, and the charity that are its spiritual life are not altogether extinct. But it is a faith without zeal, a hope without resolution, a charity without ardor.&rdquo;
+        </blockquote>
+        <cite>St. John Vianney, Sermons of the Cur&eacute; of Ars (public domain English translation)</cite>
+      </div>
+
+      <p>It's a fitting summary of the man's whole approach: not thundering against great sinners, but gently, insistently naming the quieter danger of a faith that has simply stopped trying.</p>
+    </div>
+  </section>
+
+  <div class="worn-threshold" aria-hidden="true">
+    <svg viewBox="0 0 700 14" preserveAspectRatio="none">
+      <path d="M0,6 C100,10 150,3 250,7 C350,11 400,3 500,7 C580,10 640,4 700,7" stroke="#8a6238" stroke-width="2" fill="none" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-hospital">
+    <div class="wrap">
+      <p class="label">04 &middot; The Great Hospital of Souls</p>
+      <h2>Sixteen Hours in a Wooden Box</h2>
+      <p>By around 1830, Ars was receiving pilgrims by the thousand — not for a shrine or a relic, but simply to sit across from one man in his confessional. At the height of his fame, Vianney was hearing confessions for twelve to sixteen hours a day, sometimes more, sleeping only a few hours a night and eating a single meal. Special trains were eventually run from Lyon to carry the crowds; some pilgrims waited outside for a full day and night for their turn.</p>
+      <p>He became known, in the phrase that stuck to the village itself, as the keeper of "the great hospital of souls." His method with penitents was famously gentle rather than severe: <em>"I give sinners a small penance,"</em> he told a fellow priest, <em>"and the rest I do in their place"</em> — referring to his own relentless private fasting and mortification, undertaken on behalf of people he'd just absolved.</p>
+
+      <div class="callout">
+        <h3>A parish priest, and nothing more</h3>
+        <p>Unlike almost every other canonized priest of his era, Vianney never became a bishop, never founded a religious order, and never left Ars. He is, by design, the patron saint of parish priests specifically — the ordinary, un-promoted, one-village kind — because that is the entire shape of the life he lived.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="worn-threshold" aria-hidden="true">
+    <svg viewBox="0 0 700 14" preserveAspectRatio="none">
+      <path d="M0,7 C100,4 150,11 250,6 C350,2 400,10 500,5 C580,2 640,9 700,6" stroke="#8a6238" stroke-width="2" fill="none" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-legacy">
+    <div class="wrap">
+      <p class="label">05 &middot; Legacy</p>
+      <h2>La Providence, and a Body That Would Not Decay</h2>
+      <p>Alongside the confessional work, Vianney founded La Providence, a free home and school for orphaned and destitute girls, funded on faith and, by several recorded accounts, kept afloat by outright miracles of provision when money or food ran out. He died in Ars on August 4, 1859, at 73, having spent 41 years in the same small parish.</p>
+      <p>He was beatified in 1905 and canonized on May 31, 1925, by Pope Pius XI, who in 1929 formally declared him the heavenly patron of parish priests everywhere. His body, kept in the basilica built around his original church in Ars, is preserved incorrupt and remains a destination for roughly 450,000 pilgrims a year — a scale of devotion that has barely diminished in over a century and a half.</p>
+    </div>
+  </section>
+
+  <div class="worn-threshold" aria-hidden="true">
+    <svg viewBox="0 0 700 14" preserveAspectRatio="none">
+      <path d="M0,6 C100,10 150,3 250,7 C350,11 400,3 500,7 C580,10 640,4 700,7" stroke="#8a6238" stroke-width="2" fill="none" opacity="0.55"/>
+    </svg>
+  </div>
+
+  <section class="content" id="sec-watch">
+    <div class="wrap">
+      <p class="label">06 &middot; Watch &amp; Reflect</p>
+      <h2>Two Ways Into His Story</h2>
+      <p class="lede">If you'd rather listen than read, these two overviews walk through his life from different angles.</p>
+      <div class="watch-grid">
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/ab0uQ2T-B4I" title="Saint John Vianney: The Miraculous Curé of Ars" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <p class="video-cap">"Saint John Vianney: The Miraculous Curé of Ars" — his life and its stranger episodes.</p>
+        </div>
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/SBffxIz0D_c" title="Saint John Mary Vianney: The Story of the Holy Curé of Ars" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+          <p class="video-cap">"Saint John Mary Vianney: The Story of the Holy Cur&eacute; of Ars" — a fuller biographical account.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="sec-footer">
+  <div class="wrap">
+    <p class="label" style="color:var(--candle-glow)">Feast Day</p>
+    <ul class="feast-list">
+      <li><span>Catholic Church (current Roman Calendar)</span><span>August 4</span></li>
+      <li><span>Catholic Church (pre-1969 calendar)</span><span>August 9</span></li>
+      <li><span>Church of England</span><span>August 4</span></li>
+    </ul>
+    <a class="back-link" href="../archive.html">&larr; Back to the full archive</a>
+    &nbsp;&middot;&nbsp;
+    <a class="back-link" href="../index.html">Today's saint</a>
+  </div>
+</footer>
+
+</body>
+</html>
