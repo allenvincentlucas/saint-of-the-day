@@ -116,6 +116,36 @@
       "preview": "saints/previews/st-john-vianney.png",
       "added": "2026-08-03",
       "release_date": "2026-08-03"
+    },
+    {
+      "slug": "sixtus-ii",
+      "name": "St. Sixtus II",
+      "tagline": "Arrested mid-Mass in a Roman catacomb and beheaded within the hour — his name has been spoken at the altar at every Mass since",
+      "feast_day": "08-07",
+      "feast_day_display": "August 7",
+      "feast_day_tradition": "Catholic Church (current General Roman Calendar)",
+      "feast_days_other": [
+        {
+          "tradition": "Catholic Church (Extraordinary Form / Tridentine Calendar)",
+          "date": "08-06",
+          "date_display": "August 6"
+        },
+        {
+          "tradition": "Eastern Orthodox & Oriental Orthodox Churches",
+          "date": "08-06",
+          "date_display": "August 6 (Aug 19, New Style)"
+        }
+      ],
+      "patronage": "No major universal patronage",
+      "era": "3rd century",
+      "colors": {
+        "primary": "#4a2f1c",
+        "accent": "#d98f3a"
+      },
+      "page": "saints/st-sixtus-ii.html",
+      "preview": "saints/previews/st-sixtus-ii.png",
+      "added": "2026-08-07",
+      "release_date": "2026-08-07"
     }
   ]
 }
