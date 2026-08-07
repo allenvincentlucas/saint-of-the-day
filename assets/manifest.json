@@ -176,6 +176,25 @@
       "preview": "saints/previews/st-dominic.png",
       "added": "2026-08-07",
       "release_date": "2026-08-08"
+    },
+    {
+      "slug": "teresa-benedicta",
+      "name": "St. Teresa Benedicta of the Cross",
+      "tagline": "A Jewish philosopher who lost her faith, found it again through a book read in one night, became a Carmelite nun, and died at Auschwitz for who she was and who she had become",
+      "feast_day": "08-09",
+      "feast_day_display": "August 9",
+      "feast_day_tradition": "Catholic Church (current General Roman Calendar, optional memorial)",
+      "feast_days_other": [],
+      "patronage": "Co-Patroness of Europe",
+      "era": "20th century",
+      "colors": {
+        "primary": "#171a29",
+        "accent": "#e8b567"
+      },
+      "page": "saints/st-teresa-benedicta.html",
+      "preview": "saints/previews/st-teresa-benedicta.png",
+      "added": "2026-08-07",
+      "release_date": "2026-08-09"
     }
   ]
 }
