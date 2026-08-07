@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Dominic — Preaching Without a Sword</title>
+<meta name="description" content="A Castilian priest who chose poverty and persuasion over the crusade being fought around him, and founded an order of preachers that would outlive every army sent to do what he refused to.">
+
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/favicon-180.png">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="St. Dominic">
+<meta property="og:description" content="He chose poverty and persuasion over the crusade being fought around him, and founded a preaching order that would outlive every army sent to do what he refused to.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-dominic.png">
+<meta property="og:url" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/st-dominic.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="St. Dominic">
+<meta name="twitter:description" content="He chose poverty and persuasion over the crusade being fought around him, and founded a preaching order that would outlive every army sent to do what he refused to.">
+<meta name="twitter:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-dominic.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --habit-black: #1c1a1f;
+    --habit-black-warm: #2b2730;
+    --habit-white: #f5f1e8;
+    --habit-white-dim: #e3ddd0;
+    --rose: #8b2635;
+    --rose-light: #c65a68;
+    --gold: #b8923f;
+    --gold-light: #d9b876;
+  }
+
+  :root{
+    --chrome-accent: var(--gold-light);
+    --chrome-card-bg: var(--habit-black-warm);
+    --chrome-card-border: var(--rose);
+    --chrome-card-text: var(--habit-white);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--habit-white);
+    color: var(--habit-black);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 1.1rem;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  h1,h2,h3{ font-family:'Cardo', Georgia, serif; font-weight:700; margin:0 0 .5em; color: var(--habit-black); }
+  a{ color: var(--rose); }
+  .label{ font-family:'Courier Prime', monospace; text-transform:uppercase; letter-spacing:.12em; font-size:.72rem; color: var(--habit-black-warm); opacity:.75; }
+
+  .wrap{ max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* ===== SHARED SITE CHROME (fixed across every saint page — only
+     --chrome-accent / --chrome-card-bg / --chrome-card-border / --chrome-card-text vary) ===== */
+  .site-nav{
+    position: sticky; top:0; z-index: 60;
+    background: rgba(15,12,10,.90);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,.09);
+  }
+  .site-nav-inner{
+    max-width: 760px; margin:0 auto; padding: 13px 24px;
+    display:flex; align-items:center; justify-content:space-between; gap: 16px;
+  }
+  .site-nav-brand{
+    display:flex; align-items:center; gap:9px;
+    font-family:'Cormorant Garamond', Georgia, serif; font-weight:600;
+    font-size:1.08rem; letter-spacing:.01em; color:#f5efe4; text-decoration:none;
+    white-space: nowrap;
+  }
+  .site-nav-mark{ display:block; border-radius:50%; flex-shrink:0; }
+  .site-nav-links{ display:flex; gap:22px; }
+  .site-nav-links a{
+    font-family:'IBM Plex Mono', monospace; font-size:.72rem; letter-spacing:.09em;
+    text-transform:uppercase; color:#cfc6b8; text-decoration:none;
+    padding-bottom:3px; border-bottom:1px solid transparent;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .site-nav-links a:hover, .site-nav-links a:focus-visible{
+    color: var(--chrome-accent); border-color: var(--chrome-accent);
+  }
+
+  .quick-facts-section{ padding: 6px 0 4px; }
+  .quick-facts{
+    background: var(--chrome-card-bg);
+    color: var(--chrome-card-text);
+    border: 1px solid var(--chrome-card-border);
+    border-radius: 3px;
+    padding: 30px 32px;
+  }
+  .qf-title{
+    font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.12em;
+    font-size:.72rem; color: var(--chrome-accent); margin:0 0 18px;
+  }
+  .qf-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 20px 26px; margin:0; }
+  @media(max-width:520px){ .qf-grid{ grid-template-columns: 1fr; } }
+  .qf-item dt{
+    font-family:'IBM Plex Mono', monospace; font-size:.66rem; text-transform:uppercase;
+    letter-spacing:.08em; opacity:.62; margin-bottom:5px;
+  }
+  .qf-item dd{
+    font-family:'Cormorant Garamond', Georgia, serif; font-weight:600; font-size:1.18rem;
+    margin:0; line-height:1.32;
+  }
+
+  .works-cited{ margin-top: 30px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); }
+  .wc-title{
+    font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.12em;
+    font-size:.7rem; color: var(--chrome-accent); margin:0 0 12px;
+  }
+  .wc-list{ margin:0; padding-left: 20px; font-family:'Source Serif 4', Georgia, serif; font-size:.82rem; line-height:1.65; opacity:.88; }
+  .wc-list li{ margin-bottom:9px; }
+  .wc-list a{ color: inherit; }
+  /* ===== END SHARED SITE CHROME ===== */
+
+  /* ===== Habit Stripe + Rosary Bead (signature element) =====
+     Dominic's order is known by its black-and-white habit and its
+     Rosary. Every divider on this page is a literal habit stripe;
+     every section break carries a small strand of beads. */
+  .habit-divider{ height: 14px; display:flex; }
+  .habit-divider span{ flex:1; }
+  .habit-divider span:nth-child(odd){ background: var(--habit-white-dim); }
+  .habit-divider span:nth-child(even){ background: var(--habit-black); }
+
+  .bead-rule{ display:flex; align-items:center; gap:8px; margin: 0 0 10px; }
+  .bead-rule .bead{ width:8px; height:8px; border-radius:50%; background: var(--rose); flex-shrink:0; }
+  .bead-rule .bead.big{ width:11px; height:11px; background: var(--gold); }
+  .bead-rule .line{ flex:1; height:1px; background: var(--habit-white-dim); }
+
+  /* ===== Hero ===== */
+  .hero{
+    position: relative;
+    padding: 96px 0 72px;
+    background: linear-gradient(180deg, var(--habit-black) 0%, var(--habit-black-warm) 100%);
+    color: var(--habit-white);
+    overflow: hidden;
+  }
+  .hero .wrap{ position: relative; z-index: 2; }
+  .hero-eyebrow{ color: var(--gold-light); margin-bottom:18px; display:flex; gap:10px; align-items:center; font-family:'Courier Prime',monospace; font-size:.75rem; letter-spacing:.13em; text-transform:uppercase; }
+  .hero-eyebrow .rule{ width:28px; height:1px; background: var(--gold-light); display:inline-block; }
+  .hero h1{ color:#faf6ec; font-size: clamp(2.3rem, 6vw, 3.5rem); line-height:1.06; }
+  .hero .tagline{ font-size:1.15rem; color:var(--habit-white-dim); max-width:48ch; margin-top:18px; font-style:italic; font-family:'Crimson Pro',serif; }
+  .hero-chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:32px; }
+  .chip{
+    font-family:'Courier Prime', monospace; font-size:.74rem; letter-spacing:.03em;
+    border: 1px solid rgba(245,241,232,.35); color:#efe8d8;
+    padding: 6px 12px; border-radius: 999px; background: rgba(0,0,0,.15);
+  }
+  .chip.chip-gold{ border-color: var(--gold); color: var(--gold-light); }
+
+  .hero-art{ margin-top:44px; max-width: 320px; }
+
+  /* ===== Sections ===== */
+  section.content{ padding: 66px 0; }
+  section.content h2{ font-size: clamp(1.5rem, 3.4vw, 2rem); }
+  .lede{ font-size:1.1rem; color: var(--habit-black-warm); max-width:62ch; }
+  p{ max-width: 68ch; }
+
+  /* Sermon / testament block, styled like an open preached page */
+  .tablet{
+    background: var(--habit-white-dim);
+    border: 1px solid rgba(28,26,31,.18);
+    border-left: 4px solid var(--rose);
+    padding: 32px 30px;
+    margin: 28px 0;
+  }
+  .tablet .ref{ font-family:'Courier Prime', monospace; font-size:.72rem; color: var(--rose); display:block; margin-bottom:10px; letter-spacing:.08em; }
+  .tablet blockquote{ margin:0; font-family:'Cardo', Georgia, serif; font-weight:400; font-style:italic; font-size:1.2rem; line-height:1.6; color: var(--habit-black); }
+  .tablet cite{ display:block; margin-top:16px; font-style:normal; font-family:'Courier Prime', monospace; font-size:.76rem; color: var(--habit-black-warm); opacity:.75; }
+
+  .callout{
+    background: linear-gradient(135deg, var(--habit-black), var(--habit-black-warm));
+    color: var(--habit-white);
+    padding: 30px 30px;
+    border-radius: 2px;
+    margin: 28px 0;
+  }
+  .callout h3{ color: var(--gold-light); font-size:1.15rem; }
+  .callout p{ color: var(--habit-white-dim); margin-bottom:0; max-width:none; }
+
+  .note-aside{
+    font-size:.92rem; color: var(--habit-black-warm); opacity:.85; border-left: 2px solid var(--rose);
+    padding-left: 16px; margin: 22px 0;
+  }
+
+  /* Video section */
+  .watch-grid{ display:grid; grid-template-columns: 1fr; gap: 26px; margin-top: 22px; }
+  .video-frame{ position:relative; padding-top:56.25%; background: var(--habit-black); border-radius:2px; overflow:hidden; }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-cap{ font-family:'Courier Prime', monospace; font-size:.72rem; color: var(--habit-black-warm); opacity:.75; margin-top:10px; }
+
+  footer.site-footer{
+    background: var(--habit-black); color: var(--habit-white-dim);
+    padding: 46px 0 60px; margin-top: 20px;
+  }
+  footer.site-footer a{ color: var(--gold-light); }
+  footer.site-footer .feast-list{ list-style:none; padding:0; margin: 14px 0 0; font-family:'Courier Prime', monospace; font-size:.78rem; }
+  footer.site-footer .feast-list li{ padding: 4px 0; border-bottom: 1px dashed rgba(245,241,232,.15); display:flex; justify-content:space-between; max-width:520px; gap: 16px; }
+  .back-link{ display:inline-block; margin-top:26px; font-family:'Courier Prime', monospace; font-size:.82rem; }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-brand" href="../index.html">
+      <img src="../assets/favicon.svg" alt="" class="site-nav-mark" width="22" height="22">
+      <span>Saint of the Day</span>
+    </a>
+    <div class="site-nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../archive.html">Archive</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="sec-hero">
+  <div class="wrap">
+    <p class="hero-eyebrow"><span class="rule"></span>SAINT OF THE DAY &middot; 12TH&ndash;13TH CENTURY</p>
+    <h1>St. Dominic</h1>
+    <p class="tagline">He chose poverty and persuasion over the crusade being fought around him, and founded a preaching order that would outlive every army sent to do what he refused to.</p>
+    <div class="hero-chips">
+      <span class="chip chip-gold">Feast August 8 (August 4, pre-1970 calendar)</span>
+      <span class="chip">Founder, Order of Preachers</span>
+      <span class="chip">Castile, Spain &middot; c. 1170&ndash;1221</span>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 320 170" xmlns="http://www.w3.org/2000/svg">
+        <!-- open book, spine down the center, resting on a habit-stripe base -->
+        <path d="M20,120 C60,108 100,108 155,116 L155,50 C100,42 60,42 20,54 Z" fill="#f5f1e8" opacity="0.92"/>
+        <path d="M300,120 C260,108 220,108 165,116 L165,50 C220,42 260,42 300,54 Z" fill="#f5f1e8" opacity="0.92"/>
+        <path d="M155,50 L155,116 M165,50 L165,116" stroke="#1c1a1f" stroke-width="2"/>
+        <g stroke="#8b2635" stroke-width="1.4" opacity="0.55">
+          <line x1="34" y1="68" x2="140" y2="62"/>
+          <line x1="34" y1="80" x2="140" y2="74"/>
+          <line x1="34" y1="92" x2="140" y2="86"/>
+          <line x1="180" y1="62" x2="286" y2="68"/>
+          <line x1="180" y1="74" x2="286" y2="80"/>
+          <line x1="180" y1="86" x2="286" y2="92"/>
+        </g>
+        <!-- rosary strand draped across the book -->
+        <path d="M40,124 C110,148 210,148 280,124" fill="none" stroke="#b8923f" stroke-width="2"/>
+        <circle cx="60" cy="132" r="4" fill="#8b2635"/>
+        <circle cx="95" cy="141" r="4" fill="#8b2635"/>
+        <circle cx="135" cy="146" r="4" fill="#8b2635"/>
+        <circle cx="160" cy="147" r="5" fill="#b8923f"/>
+        <circle cx="185" cy="146" r="4" fill="#8b2635"/>
+        <circle cx="225" cy="141" r="4" fill="#8b2635"/>
+        <circle cx="260" cy="132" r="4" fill="#8b2635"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="habit-divider" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<main>
+
+  <section class="content" id="sec-context">
+    <div class="wrap">
+      <div class="bead-rule"><span class="bead big"></span><span class="line"></span></div>
+      <p class="label">Castile to Languedoc</p>
+      <h2>A Canon Who Went on the Road</h2>
+      <p class="lede">Dominic was born around 1170 in Caleruega, a small village in Old Castile, to parents of the local nobility.</p>
+      <p>An uncle who was a priest gave him his early education; he went on to study arts and theology at Palencia, where, according to tradition, he sold his own books and belongings to feed people during a famine, telling his startled classmates he would not study off &ldquo;dead skins when men are dying of hunger.&rdquo; Ordained around age 24, he became a canon at the cathedral of Osma, living under a rule that emphasized common life and prayer.</p>
+      <p>In 1203, Dominic accompanied his bishop, Diego de Acevedo, on a diplomatic journey through southern France. There, in the region of Languedoc, they encountered the Cathar (or Albigensian) movement in full strength &mdash; a dualist faith that treated the material world itself as the work of an evil god, rejected marriage and procreation, and had drawn large parts of the local population away from the Catholic Church. Pope Innocent III had already sent preachers and, eventually, an armed crusade to confront it. Dominic chose a different tool.</p>
+    </div>
+  </section>
+
+  <div class="habit-divider" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <section class="content" id="sec-defining">
+    <div class="wrap">
+      <div class="bead-rule"><span class="bead big"></span><span class="line"></span></div>
+      <p class="label">Preaching Without a Sword</p>
+      <h2>Matching the Cathars in Poverty</h2>
+      <p class="lede">Dominic noticed something the earlier preaching campaign had missed: the Cathar teachers lived in visible poverty, and ordinary people trusted them for it.</p>
+      <p>The Catholic preachers sent before him, by contrast, often traveled with the comforts and retinue of clergy of their rank &mdash; and were dismissed for it. Dominic and Diego responded by giving up horses, servants, and settled lodging, walking from village to village and debating Cathar teachers in the open, on equal terms of poverty. From 1207 to 1215, even as the region fell into the armed Albigensian Crusade around him, Dominic kept to this same method: conversion through argument, prayer, and visible self-denial rather than the sword.</p>
+
+      <p class="note-aside">A widely told tradition holds that Our Lady appeared to Dominic near Toulouse in 1208, discouraged by his slow progress, and gave him the Rosary as a devotion to preach alongside his arguments. It is a story treasured across centuries of Dominican life and repeated by many popes since &mdash; but historians note that no document from Dominic's own lifetime describes the event, and the Rosary's exact origins are woven from later tradition as much as from contemporary record. What is certain is that devotion to the Rosary grew up inseparably from the Dominican Order and is one of Dominic's most lasting legacies to ordinary Catholic prayer life.</p>
+
+      <p>In 1215, with the fighting still unresolved, Dominic settled in Toulouse and gathered a small community of preachers around the same rule of poverty and study. Pope Honorius III formally approved the new Order of Preachers &mdash; the Dominicans &mdash; on 22 December 1216.</p>
+    </div>
+  </section>
+
+  <div class="habit-divider" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <section class="content" id="sec-legacy">
+    <div class="wrap">
+      <div class="bead-rule"><span class="bead big"></span><span class="line"></span></div>
+      <p class="label">A Preaching Order for a Changing World</p>
+      <h2>What He Left Behind</h2>
+      <p class="lede">Dominic did not intend to build a monastery so much as a mobile school of preachers, deliberately placed in the growing university cities of Europe.</p>
+      <p>On 15 August 1217, with only seventeen brothers formally professed, he made the decision his own followers thought reckless: he scattered them across Europe &mdash; to Paris, Bologna, Spain &mdash; rather than keeping them together. &ldquo;If grain is sown, it bears fruit,&rdquo; he is remembered telling them, &ldquo;but if it is stored, it rots.&rdquo; The order grew explosively; by the time of Dominic's death, roughly 500 friars had reached as far as Hungary, Denmark, and England, and within a few more decades the Dominicans had produced towering figures of medieval thought, including St. Thomas Aquinas.</p>
+
+      <p>Worn down by his travels, Dominic fell ill at the convent of San Niccolò delle Vigne in Bologna in the summer of 1221. He made his confession, gathered the friars around him, and gave them what has come down to us as his final testament.</p>
+
+      <div class="tablet">
+        <span class="ref">DOMINIC'S DEATHBED TESTAMENT, BOLOGNA, AUGUST 1221</span>
+        <blockquote>
+          &ldquo;These, my much loved ones, are the bequests which I leave to you as my sons: have charity for one another; guard humility; and make your treasure out of voluntary poverty.&rdquo;
+        </blockquote>
+        <cite>Recorded by the early Dominican tradition; public domain English rendering</cite>
+      </div>
+
+      <div class="callout">
+        <h3>Canonized by Someone Who Knew Him</h3>
+        <p>Dominic died on 6 August 1221. Just thirteen years later, in 1234, Pope Gregory IX &mdash; who had known him personally &mdash; canonized him. He is remembered today as patron of astronomers and the natural sciences, and of the Dominican Republic, which took his name.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-facts-section">
+    <div class="wrap">
+      <div class="quick-facts">
+        <p class="qf-title">Quick Facts</p>
+        <dl class="qf-grid">
+          <div class="qf-item"><dt>Origin</dt><dd>Caleruega, Old Castile, Spain &middot; c. 1170</dd></div>
+          <div class="qf-item"><dt>Role</dt><dd>Priest; Founder, Order of Preachers (Dominicans)</dd></div>
+          <div class="qf-item"><dt>Known For</dt><dd>Countering heresy through poverty and preaching, not force; the Rosary tradition</dd></div>
+          <div class="qf-item"><dt>Patronage</dt><dd>Astronomers, natural scientists, the Dominican Republic</dd></div>
+          <div class="qf-item"><dt>Feast Day</dt><dd>Aug 8 (current calendar) &middot; Aug 4 (pre-1970 calendar)</dd></div>
+          <div class="qf-item"><dt>Honorific</dt><dd>Saint &middot; canonized 1234</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="habit-divider" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <section class="content" id="sec-watch">
+    <div class="wrap">
+      <div class="bead-rule"><span class="bead big"></span><span class="line"></span></div>
+      <p class="label">Watch</p>
+      <h2>His Story, Told Briefly</h2>
+      <div class="watch-grid">
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/U7H3VF165V8" title="Who Was Saint Dominic? — Catechism for Kids" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="video-cap">&ldquo;Who Was Saint Dominic?&rdquo; &mdash; Catechism for Kids</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="habit-divider" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <section class="content" id="sec-prayer">
+    <div class="wrap">
+      <div class="bead-rule"><span class="bead big"></span><span class="line"></span></div>
+      <p class="label">Prayer</p>
+      <h2>For His Intercession</h2>
+      <div class="tablet">
+        <blockquote>
+          Saint Dominic, you met a world convinced by loud certainty with quiet poverty and patient argument, trusting that truth needs no sword to defend it. Teach us to hold our convictions with humility, to meet disagreement with charity rather than force, and to trust that a life given away in service can outlast any army. Pray for preachers, teachers, and all who labor to bring people gently back to the truth. Amen.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="sec-footer">
+  <div class="wrap">
+    <p class="label" style="color:var(--gold-light)">Feast Day, by Tradition</p>
+    <ul class="feast-list">
+      <li><span>Catholic Church (current General Roman Calendar)</span><span>August 8</span></li>
+      <li><span>Catholic Church (pre-1970 General Roman Calendar)</span><span>August 4</span></li>
+      <li><span>Anglican Communion &amp; Lutheran churches</span><span>August 8</span></li>
+    </ul>
+    <a class="back-link" href="../archive.html">&larr; Back to the full archive</a>
+    &nbsp;&middot;&nbsp;
+    <a class="back-link" href="../index.html">Today's saint</a>
+
+    <div class="works-cited">
+      <p class="wc-title">Works Cited</p>
+      <ol class="wc-list">
+        <li>&quot;St. Dominic.&quot; <em>Encyclop&aelig;dia Britannica</em>, <a href="https://www.britannica.com/biography/Saint-Dominic" target="_blank" rel="noopener">britannica.com</a>. Accessed 7 Aug. 2026.</li>
+        <li>&quot;St. Dominic of Guzm&aacute;n, priest, Founder of the Order of The Preachers.&quot; <em>Vatican News</em>, <a href="https://www.vaticannews.va/en/saints/08/08/st--dominic-of-guzman--priest-founder-of-the-order-of-the-preach.html" target="_blank" rel="noopener">vaticannews.va</a>. Accessed 7 Aug. 2026.</li>
+        <li>&quot;St. Dominic.&quot; <em>Catholic Encyclopedia</em>, New Advent, <a href="https://www.newadvent.org/cathen/05106a.htm" target="_blank" rel="noopener">newadvent.org</a>. Accessed 7 Aug. 2026.</li>
+        <li>&quot;The Death of Saint Dominic.&quot; <em>Dominican Friars, Province of the Most Holy Name of Jesus</em>, <a href="https://opwest.org/blog/the-death-of-saint-dominic" target="_blank" rel="noopener">opwest.org</a>. Accessed 7 Aug. 2026.</li>
+        <li>&quot;The Rosary &amp; St. Dominic.&quot; <em>Rosary Center &amp; Confraternity</em>, <a href="https://www.rosarycenter.org/the-rosary-and-st.-dominic" target="_blank" rel="noopener">rosarycenter.org</a>. Accessed 7 Aug. 2026.</li>
+        <li>Catechism for Kids. &quot;Who Was Saint Dominic?&quot; <em>YouTube</em>, 8 Aug. 2025, <a href="https://www.youtube.com/watch?v=U7H3VF165V8" target="_blank" rel="noopener">youtube.com/watch?v=U7H3VF165V8</a>.</li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var rules = document.querySelectorAll('.bead-rule .bead.big');
+    var ids = ['sec-context','sec-defining','sec-legacy','sec-watch','sec-prayer'];
+    var sections = ids.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+    if (!rules.length || !sections.length) return;
+    rules.forEach(function(r, i){
+      r.style.cursor = 'pointer';
+      r.addEventListener('click', function(){
+        if (sections[i]) sections[i].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
