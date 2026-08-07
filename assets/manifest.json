@@ -146,6 +146,36 @@
       "preview": "saints/previews/st-sixtus-ii.png",
       "added": "2026-08-07",
       "release_date": "2026-08-07"
+    },
+    {
+      "slug": "dominic",
+      "name": "St. Dominic",
+      "tagline": "He chose poverty and persuasion over the crusade being fought around him, and founded a preaching order that would outlive every army sent to do what he refused to",
+      "feast_day": "08-08",
+      "feast_day_display": "August 8",
+      "feast_day_tradition": "Catholic Church (current General Roman Calendar)",
+      "feast_days_other": [
+        {
+          "tradition": "Catholic Church (pre-1970 General Roman Calendar)",
+          "date": "08-04",
+          "date_display": "August 4"
+        },
+        {
+          "tradition": "Anglican Communion & Lutheran churches",
+          "date": "08-08",
+          "date_display": "August 8"
+        }
+      ],
+      "patronage": "Astronomers, natural scientists",
+      "era": "12th–13th century",
+      "colors": {
+        "primary": "#1c1a1f",
+        "accent": "#8b2635"
+      },
+      "page": "saints/st-dominic.html",
+      "preview": "saints/previews/st-dominic.png",
+      "added": "2026-08-07",
+      "release_date": "2026-08-08"
     }
   ]
 }
