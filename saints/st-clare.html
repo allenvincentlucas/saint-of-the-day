@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St. Clare of Assisi — The Mirror of Poverty</title>
+<meta name="description" content="A wealthy 18-year-old climbed out a side door at night to give away everything she owned, and spent the next forty years convincing the Church that owning nothing was not a problem to be solved.">
+
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/favicon-180.png">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="St. Clare of Assisi">
+<meta property="og:description" content="A wealthy 18-year-old gave away everything she owned and spent forty years convincing the Church that owning nothing was not a problem to be solved.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-clare.png">
+<meta property="og:url" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/st-clare.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="St. Clare of Assisi">
+<meta name="twitter:description" content="A wealthy 18-year-old gave away everything she owned and spent forty years convincing the Church that owning nothing was not a problem to be solved.">
+<meta name="twitter:image" content="https://allenvincentlucas.github.io/saint-of-the-day/saints/previews/st-clare.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --silver: #8b96a3;
+    --silver-light: #c3ccd6;
+    --dove: #eae7de;
+    --dove-deep: #d8d3c4;
+    --habit-grey: #3a3d42;
+    --habit-grey-deep: #24262a;
+    --gold-thread: #b99a4e;
+  }
+
+  :root{
+    --chrome-accent: var(--silver-light);
+    --chrome-card-bg: var(--habit-grey-deep);
+    --chrome-card-border: var(--gold-thread);
+    --chrome-card-text: var(--dove);
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--dove);
+    color: var(--habit-grey-deep);
+    font-family: 'Cardo', Georgia, serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation: none !important; transition: none !important; }
+  }
+
+  h1,h2,h3{ font-family:'Cormorant SC', Georgia, serif; font-weight:600; margin:0 0 .5em; color: var(--habit-grey-deep); letter-spacing:.01em; }
+  a{ color: var(--habit-grey); }
+  .label{ font-family:'Space Mono', monospace; text-transform:uppercase; letter-spacing:.12em; font-size:.72rem; color: var(--silver); }
+
+  .wrap{ max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* ===== SHARED SITE CHROME (fixed across every saint page — only
+     --chrome-accent / --chrome-card-bg / --chrome-card-border / --chrome-card-text vary) ===== */
+  .site-nav{
+    position: sticky; top:0; z-index: 60;
+    background: rgba(15,12,10,.90);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,.09);
+  }
+  .site-nav-inner{
+    max-width: 760px; margin:0 auto; padding: 13px 24px;
+    display:flex; align-items:center; justify-content:space-between; gap: 16px;
+  }
+  .site-nav-brand{
+    display:flex; align-items:center; gap:9px;
+    font-family:'Cormorant Garamond', Georgia, serif; font-weight:600;
+    font-size:1.08rem; letter-spacing:.01em; color:#f5efe4; text-decoration:none;
+    white-space: nowrap;
+  }
+  .site-nav-mark{ display:block; border-radius:50%; flex-shrink:0; }
+  .site-nav-links{ display:flex; gap:22px; }
+  .site-nav-links a{
+    font-family:'IBM Plex Mono', monospace; font-size:.72rem; letter-spacing:.09em;
+    text-transform:uppercase; color:#cfc6b8; text-decoration:none;
+    padding-bottom:3px; border-bottom:1px solid transparent;
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .site-nav-links a:hover, .site-nav-links a:focus-visible{
+    color: var(--chrome-accent); border-color: var(--chrome-accent);
+  }
+
+  .quick-facts-section{ padding: 6px 0 4px; }
+  .quick-facts{
+    background: var(--chrome-card-bg);
+    color: var(--chrome-card-text);
+    border: 1px solid var(--chrome-card-border);
+    border-radius: 3px;
+    padding: 30px 32px;
+  }
+  .qf-title{
+    font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.12em;
+    font-size:.72rem; color: var(--chrome-accent); margin:0 0 18px;
+  }
+  .qf-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 20px 26px; margin:0; }
+  @media(max-width:520px){ .qf-grid{ grid-template-columns: 1fr; } }
+  .qf-item dt{
+    font-family:'IBM Plex Mono', monospace; font-size:.66rem; text-transform:uppercase;
+    letter-spacing:.08em; opacity:.62; margin-bottom:5px;
+  }
+  .qf-item dd{
+    font-family:'Cormorant Garamond', Georgia, serif; font-weight:600; font-size:1.18rem;
+    margin:0; line-height:1.32;
+  }
+
+  .works-cited{ margin-top: 30px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.14); }
+  .wc-title{
+    font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.12em;
+    font-size:.7rem; color: var(--chrome-accent); margin:0 0 12px;
+  }
+  .wc-list{ margin:0; padding-left: 20px; font-family:'Source Serif 4', Georgia, serif; font-size:.82rem; line-height:1.65; opacity:.88; }
+  .wc-list li{ margin-bottom:9px; }
+  .wc-list a{ color: inherit; }
+  /* ===== END SHARED SITE CHROME ===== */
+
+  /* ===== The Mirror (signature element) =====
+     Clare's own image for the spiritual life was a mirror — polished
+     metal, not glass, the kind she would have owned as a noblewoman
+     and gave up. Every divider on this page is a thin arc of "polished"
+     line, catching light at its center, standing in for that mirror. */
+  .mirror-rule{ display:flex; align-items:center; gap:14px; margin: 0 0 10px; }
+  .mirror-rule svg{ flex-shrink:0; }
+  .mirror-rule .line{ flex:1; height:1px; background: var(--silver); opacity:.4; }
+
+  /* ===== Hero ===== */
+  .hero{
+    position: relative;
+    padding: 96px 0 72px;
+    background: linear-gradient(180deg, var(--habit-grey-deep) 0%, var(--habit-grey) 100%);
+    color: var(--dove);
+    overflow: hidden;
+  }
+  .hero .wrap{ position: relative; z-index: 2; }
+  .hero-eyebrow{ color: var(--gold-thread); margin-bottom:18px; display:flex; gap:10px; align-items:center; font-family:'Space Mono',monospace; font-size:.75rem; letter-spacing:.13em; text-transform:uppercase; }
+  .hero-eyebrow .rule{ width:28px; height:1px; background: var(--gold-thread); display:inline-block; }
+  .hero h1{ color:#f5f2e9; font-size: clamp(2.2rem, 5.8vw, 3.4rem); line-height:1.08; }
+  .hero .tagline{ font-size:1.15rem; color:var(--dove-deep); max-width:50ch; margin-top:18px; font-style:italic; font-family:'Cardo',serif; }
+  .hero-chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:32px; }
+  .chip{
+    font-family:'Space Mono', monospace; font-size:.74rem; letter-spacing:.03em;
+    border: 1px solid rgba(234,231,222,.35); color:#e8e4d8;
+    padding: 6px 12px; border-radius: 999px; background: rgba(0,0,0,.15);
+  }
+  .chip.chip-gold{ border-color: var(--gold-thread); color: #d9bd77; }
+
+  .hero-art{ margin-top:44px; max-width: 260px; }
+
+  /* ===== Sections ===== */
+  section.content{ padding: 66px 0; }
+  section.content h2{ font-size: clamp(1.5rem, 3.4vw, 2rem); }
+  .lede{ font-size:1.1rem; color: var(--habit-grey); max-width:62ch; }
+  p{ max-width: 68ch; }
+
+  .silver-divider{
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--silver), transparent);
+    opacity:.45;
+  }
+
+  .tablet{
+    background: #ffffff;
+    border: 1px solid rgba(58,61,66,.16);
+    border-left: 4px solid var(--gold-thread);
+    padding: 32px 30px;
+    margin: 28px 0;
+    box-shadow: 0 1px 3px rgba(58,61,66,.06);
+  }
+  .tablet .ref{ font-family:'Space Mono', monospace; font-size:.72rem; color: var(--gold-thread); display:block; margin-bottom:10px; letter-spacing:.08em; }
+  .tablet blockquote{ margin:0; font-family:'Cormorant SC', Georgia, serif; font-weight:500; font-size:1.25rem; line-height:1.55; color: var(--habit-grey-deep); }
+  .tablet cite{ display:block; margin-top:16px; font-style:normal; font-family:'Space Mono', monospace; font-size:.76rem; color: var(--silver); }
+
+  .callout{
+    background: linear-gradient(135deg, var(--habit-grey-deep), var(--habit-grey));
+    color: var(--dove);
+    padding: 30px 30px;
+    border-radius: 2px;
+    margin: 28px 0;
+  }
+  .callout h3{ color: #d9bd77; font-size:1.15rem; }
+  .callout p{ color: var(--dove-deep); margin-bottom:0; max-width:none; }
+
+  .note-aside{
+    font-size:.92rem; color: var(--habit-grey); opacity:.85; border-left: 2px solid var(--gold-thread);
+    padding-left: 16px; margin: 22px 0;
+  }
+
+  .watch-grid{ display:grid; grid-template-columns: 1fr; gap: 26px; margin-top: 22px; }
+  .video-frame{ position:relative; padding-top:56.25%; background: var(--habit-grey-deep); border-radius:2px; overflow:hidden; }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .video-cap{ font-family:'Space Mono', monospace; font-size:.72rem; color: var(--silver); margin-top:10px; }
+
+  footer.site-footer{
+    background: var(--habit-grey-deep); color: var(--dove-deep);
+    padding: 46px 0 60px; margin-top: 20px;
+  }
+  footer.site-footer a{ color: #d9bd77; }
+  footer.site-footer .feast-list{ list-style:none; padding:0; margin: 14px 0 0; font-family:'Space Mono', monospace; font-size:.78rem; }
+  footer.site-footer .feast-list li{ padding: 4px 0; border-bottom: 1px dashed rgba(234,231,222,.15); display:flex; justify-content:space-between; max-width:520px; gap: 16px; }
+  .back-link{ display:inline-block; margin-top:26px; font-family:'Space Mono', monospace; font-size:.82rem; }
+</style>
+</head>
+<body>
+<nav class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-brand" href="../index.html">
+      <img src="../assets/favicon.svg" alt="" class="site-nav-mark" width="22" height="22">
+      <span>Saint of the Day</span>
+    </a>
+    <div class="site-nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../archive.html">Archive</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="sec-hero">
+  <div class="wrap">
+    <p class="hero-eyebrow"><span class="rule"></span>SAINT OF THE DAY &middot; 13TH CENTURY</p>
+    <h1>St. Clare of Assisi</h1>
+    <p class="tagline">A wealthy 18-year-old climbed out a side door at night to give away everything she owned, and spent the next forty years convincing the Church that owning nothing was not a problem to be solved.</p>
+    <div class="hero-chips">
+      <span class="chip chip-gold">Feast August 11</span>
+      <span class="chip">Founder, Poor Clares</span>
+      <span class="chip">Assisi, Italy &middot; 1193/94&ndash;1253</span>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- a hand mirror, polished metal, held up -->
+        <ellipse cx="130" cy="85" rx="62" ry="72" fill="none" stroke="#8b96a3" stroke-width="3"/>
+        <ellipse cx="130" cy="85" rx="62" ry="72" fill="#c3ccd6" opacity="0.18"/>
+        <line x1="130" y1="157" x2="130" y2="195" stroke="#b99a4e" stroke-width="4" stroke-linecap="round"/>
+        <!-- a small cross, reflected faintly at the center -->
+        <g stroke="#eae7de" stroke-width="2" opacity="0.7">
+          <line x1="130" y1="60" x2="130" y2="105"/>
+          <line x1="112" y1="78" x2="148" y2="78"/>
+        </g>
+        <!-- a soft highlight, like light catching polished metal -->
+        <ellipse cx="105" cy="55" rx="16" ry="26" fill="#f5f2e9" opacity="0.25"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<div class="silver-divider" aria-hidden="true"></div>
+
+<main>
+
+  <section class="content" id="sec-context">
+    <div class="wrap">
+      <div class="mirror-rule">
+        <svg width="20" height="20" viewBox="0 0 20 20"><ellipse cx="10" cy="9" rx="7" ry="8" fill="none" stroke="#3a3d42" stroke-width="1"/><line x1="10" y1="17" x2="10" y2="20" stroke="#3a3d42" stroke-width="1"/></svg>
+        <span class="line"></span>
+      </div>
+      <p class="label">A Palace Girl and a Beggar Preacher</p>
+      <h2>Born Into Everything She Would Give Away</h2>
+      <p class="lede">Clare was born in Assisi in either 1193 or 1194 &mdash; sources differ on the exact year &mdash; the eldest daughter of a noble family with a palace in the city and land beyond it.</p>
+      <p>Her mother, Ortolana, was known across Assisi for her own piety, having made pilgrimages as far as the Holy Land; her father died while Clare was still young. Clare was raised in comfort, educated, and set apart for the kind of advantageous marriage her family's status expected &mdash; but she was already quietly setting food aside from her own table to give to the poor.</p>
+      <p>Everything changed when she was eighteen. Francis of Assisi, a former wealthy merchant's son turned barefoot preacher, came to speak in the church of San Giorgio during Lent. Clare sought him out afterward for guidance, and what began as spiritual direction became something neither of them had originally planned.</p>
+    </div>
+  </section>
+
+  <div class="silver-divider" aria-hidden="true"></div>
+
+  <section class="content" id="sec-defining">
+    <div class="wrap">
+      <div class="mirror-rule">
+        <svg width="20" height="20" viewBox="0 0 20 20"><ellipse cx="10" cy="9" rx="7" ry="8" fill="none" stroke="#3a3d42" stroke-width="1"/><line x1="10" y1="17" x2="10" y2="20" stroke="#3a3d42" stroke-width="1"/></svg>
+        <span class="line"></span>
+      </div>
+      <p class="label">A Door Left Open at Night</p>
+      <h2>Palm Sunday, 1212</h2>
+      <p class="lede">With her family arranging a marriage she had no intention of accepting, Clare slipped out of her family's palace on the night of Palm Sunday and made her way, in the dark, to the small Porziuncola chapel where Francis and his brothers gathered.</p>
+      <p>There, before the altar, Francis cut her hair and clothed her in a plain habit, and Clare made her vows &mdash; the first woman to formally join his movement. Her furious family tried to physically drag her back home days later; Clare is said to have clung to the altar and bared her shorn head to prove there was no going back. Within weeks, her younger sister Agnes joined her too, defying the same family a second time.</p>
+      <p>Francis placed the two women at the small church of San Damiano, which he had earlier rebuilt with his own hands, and it was there that the community later known as the Poor Clares took root &mdash; and where Clare would remain, almost without leaving, for the next forty-one years.</p>
+
+      <div class="tablet">
+        <span class="ref">CLARE'S FOURTH LETTER TO AGNES OF PRAGUE, C. 1253</span>
+        <blockquote>
+          &ldquo;Place your mind before the mirror of eternity!&rdquo;
+        </blockquote>
+        <cite>Quoted in Pope John Paul II's 1993 letter marking the 8th centenary of Clare's birth, vatican.va</cite>
+      </div>
+
+      <p>Clare's great struggle as abbess was not against outside enemies but against her own Church's discomfort with what she'd chosen. Cardinal Ugolino, later Pope Gregory IX, drafted a rule for her community that allowed the shared ownership of property &mdash; standard practice for religious houses, and safer. Clare refused it, insisting on what she called the &ldquo;privilege of poverty&rdquo;: that her sisters would own nothing at all, individually or in common, trusting entirely on daily begging by the friars for their food. She spent decades defending that position against well-meaning pressure to soften it.</p>
+    </div>
+  </section>
+
+  <div class="silver-divider" aria-hidden="true"></div>
+
+  <section class="content" id="sec-legacy">
+    <div class="wrap">
+      <div class="mirror-rule">
+        <svg width="20" height="20" viewBox="0 0 20 20"><ellipse cx="10" cy="9" rx="7" ry="8" fill="none" stroke="#3a3d42" stroke-width="1"/><line x1="10" y1="17" x2="10" y2="20" stroke="#3a3d42" stroke-width="1"/></svg>
+        <span class="line"></span>
+      </div>
+      <p class="label">A Rule Written Two Days Before She Died</p>
+      <h2>What Outlasted Her</h2>
+      <p class="lede">Tradition holds that Clare, gravely ill in 1240 and again in 1241, twice carried the Blessed Sacrament to the walls of San Damiano as invading soldiers approached Assisi &mdash; and both times, the attackers withdrew.</p>
+      <p>Whatever the precise historical mechanics, the story cemented her reputation as a protector of her city, and it's why she's sometimes invoked against invasion and for peace. Late in her life, bedridden and too ill to attend Christmas Mass, she reported seeing and hearing the entire liturgy from her cell as though projected onto her wall from the church across town &mdash; the basis on which Pope Pius XII named her patron of television in 1958.</p>
+
+      <p class="note-aside">Clare spent the final decades of her life fighting for one specific thing: papal approval of a rule guaranteeing her sisters could own absolutely nothing. Pope after pope resisted, worried it was impractical for cloistered women who couldn't beg for themselves the way the friars did. Clare never relented. Pope Innocent IV finally approved her rule &mdash; the first religious rule known to have been written by a woman &mdash; on 9 August 1253. Clare died two days later, on 11 August, with the document, and the argument it had taken her whole adult life to win, in hand.</p>
+
+      <div class="callout">
+        <h3>A Movement, Not a Single Convent</h3>
+        <p>By the time of her death, the Poor Clares had spread across Italy, France, and Germany, drawing thousands of women, including a princess of Bohemia and a niece of the king of Hungary. Clare was canonized just two years later, in 1255, by Pope Alexander IV. She remains patron of eye disorders, embroiderers, and, thanks to that Christmas vision, television and telecommunications.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-facts-section">
+    <div class="wrap">
+      <div class="quick-facts">
+        <p class="qf-title">Quick Facts</p>
+        <dl class="qf-grid">
+          <div class="qf-item"><dt>Origin</dt><dd>Assisi, Italy &middot; 1193 or 1194</dd></div>
+          <div class="qf-item"><dt>Role</dt><dd>Abbess; Founder, Order of Poor Ladies (Poor Clares)</dd></div>
+          <div class="qf-item"><dt>Known For</dt><dd>First female follower of St. Francis; lifelong vow of absolute poverty</dd></div>
+          <div class="qf-item"><dt>Patronage</dt><dd>Eye disorders, embroiderers, television</dd></div>
+          <div class="qf-item"><dt>Feast Day</dt><dd>August 11</dd></div>
+          <div class="qf-item"><dt>Honorific</dt><dd>Saint &middot; canonized 1255</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="silver-divider" aria-hidden="true"></div>
+
+  <section class="content" id="sec-watch">
+    <div class="wrap">
+      <div class="mirror-rule">
+        <svg width="20" height="20" viewBox="0 0 20 20"><ellipse cx="10" cy="9" rx="7" ry="8" fill="none" stroke="#3a3d42" stroke-width="1"/><line x1="10" y1="17" x2="10" y2="20" stroke="#3a3d42" stroke-width="1"/></svg>
+        <span class="line"></span>
+      </div>
+      <p class="label">Watch</p>
+      <h2>Her Story, Told Briefly</h2>
+      <div class="watch-grid">
+        <div>
+          <div class="video-frame">
+            <iframe src="https://www.youtube.com/embed/XHVwHGiKLEo" title="Who Was Saint Clare of Assisi? — Catechism for Kids" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p class="video-cap">&ldquo;Who Was Saint Clare of Assisi?&rdquo; &mdash; Catechism for Kids</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="silver-divider" aria-hidden="true"></div>
+
+  <section class="content" id="sec-prayer">
+    <div class="wrap">
+      <div class="mirror-rule">
+        <svg width="20" height="20" viewBox="0 0 20 20"><ellipse cx="10" cy="9" rx="7" ry="8" fill="none" stroke="#3a3d42" stroke-width="1"/><line x1="10" y1="17" x2="10" y2="20" stroke="#3a3d42" stroke-width="1"/></svg>
+        <span class="line"></span>
+      </div>
+      <p class="label">Prayer</p>
+      <h2>For Her Intercession</h2>
+      <div class="tablet">
+        <blockquote>
+          Saint Clare, you looked into the mirror of eternity and found that everything you had been taught to hold onto was worth setting down. Teach us to tell the difference between what we need and what we've merely been told to want, and give us your patience for the long, quiet arguments worth having. Pray for those who follow a call their families don't understand, and for anyone trying to hold onto something the world keeps insisting they simplify. Amen.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="sec-footer">
+  <div class="wrap">
+    <p class="label" style="color:#d9bd77">Feast Day</p>
+    <ul class="feast-list">
+      <li><span>Catholic Church (General Roman Calendar, Memorial)</span><span>August 11</span></li>
+      <li><span>Anglican Communion &amp; Lutheran churches</span><span>August 11</span></li>
+    </ul>
+    <a class="back-link" href="../archive.html">&larr; Back to the full archive</a>
+    &nbsp;&middot;&nbsp;
+    <a class="back-link" href="../index.html">Today's saint</a>
+
+    <div class="works-cited">
+      <p class="wc-title">Works Cited</p>
+      <ol class="wc-list">
+        <li>&quot;St. Clare of Assisi.&quot; <em>Encyclop&aelig;dia Britannica</em>, <a href="https://www.britannica.com/biography/Saint-Clare-of-Assisi" target="_blank" rel="noopener">britannica.com</a>. Accessed 7 Aug. 2026.</li>
+        <li>&quot;St. Clare of Assisi.&quot; <em>Catholic Encyclopedia</em>, New Advent, <a href="https://www.newadvent.org/cathen/04004a.htm" target="_blank" rel="noopener">newadvent.org</a>. Accessed 7 Aug. 2026.</li>
+        <li>Pope John Paul II. &quot;Letter on the Eighth Centenary of the Birth of St. Clare of Assisi.&quot; <em>The Holy See</em>, 11 Aug. 1993, <a href="https://www.vatican.va/content/john-paul-ii/en/letters/1993/documents/hf_jp-ii_let_11081993_viii-cent-st-clare.html" target="_blank" rel="noopener">vatican.va</a>. Accessed 7 Aug. 2026.</li>
+        <li>&quot;Clare of Assisi.&quot; <em>New World Encyclopedia</em>, <a href="https://www.newworldencyclopedia.org/entry/Clare_of_Assisi" target="_blank" rel="noopener">newworldencyclopedia.org</a>. Accessed 7 Aug. 2026.</li>
+        <li>Catechism for Kids. &quot;Who Was Saint Clare of Assisi?&quot; <em>YouTube</em>, 10 Aug. 2025, <a href="https://www.youtube.com/watch?v=XHVwHGiKLEo" target="_blank" rel="noopener">youtube.com/watch?v=XHVwHGiKLEo</a>.</li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var rules = document.querySelectorAll('.mirror-rule svg');
+    var ids = ['sec-context','sec-defining','sec-legacy','sec-watch','sec-prayer'];
+    var sections = ids.map(function(id){ return document.getElementById(id); }).filter(Boolean);
+    if (!rules.length || !sections.length) return;
+    rules.forEach(function(r, i){
+      r.style.cursor = 'pointer';
+      r.addEventListener('click', function(){
+        if (sections[i]) sections[i].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  })();
+</script>
+
+</body>
+</html>
