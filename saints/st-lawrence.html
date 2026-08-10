@@ -217,6 +217,20 @@
   footer.site-footer .feast-list{ list-style:none; padding:0; margin: 14px 0 0; font-family:'Overpass Mono', monospace; font-size:.78rem; }
   footer.site-footer .feast-list li{ padding: 4px 0; border-bottom: 1px dashed rgba(242,233,221,.15); display:flex; justify-content:space-between; max-width:520px; gap: 16px; }
   .back-link{ display:inline-block; margin-top:26px; font-family:'Overpass Mono', monospace; font-size:.82rem; }
+
+  .share-section{ padding: 8px 0 28px; text-align:center; }
+  .share-row{ display:flex; align-items:center; justify-content:center; gap:10px; flex-wrap:wrap; }
+  .share-label{
+    font-family:'IBM Plex Mono', monospace; font-size:.7rem; letter-spacing:.1em;
+    text-transform:uppercase; opacity:.6;
+  }
+  .share-btn{
+    font-family:'IBM Plex Mono', monospace; font-size:.74rem; letter-spacing:.02em;
+    padding:7px 15px; border:1px solid currentColor; opacity:.75; border-radius:999px;
+    text-decoration:none; cursor:pointer; background:transparent; color:inherit;
+    transition: color .15s ease, border-color .15s ease, opacity .15s ease;
+  }
+  .share-btn:hover, .share-btn:focus-visible{ color: var(--chrome-accent); border-color: var(--chrome-accent); opacity:1; }
 </style>
 </head>
 <body>
@@ -340,6 +354,17 @@
           <div class="qf-item"><dt>Feast Day</dt><dd>August 10 (Feast)</dd></div>
           <div class="qf-item"><dt>Honorific</dt><dd>Saint &amp; Martyr &middot; pre-congregation canonization</dd></div>
         </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="share-section">
+    <div class="wrap">
+      <div class="share-row">
+        <span class="share-label">Share</span>
+        <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fallenvincentlucas.github.io%2Fsaint-of-the-day%2Fsaints%2Fst-lawrence.html" target="_blank" rel="noopener">Facebook</a>
+        <a class="share-btn" href="https://twitter.com/intent/tweet?text=St.%20Lawrence&amp;url=https%3A%2F%2Fallenvincentlucas.github.io%2Fsaint-of-the-day%2Fsaints%2Fst-lawrence.html" target="_blank" rel="noopener">X</a>
+        <button type="button" class="share-btn" onclick="navigator.clipboard.writeText('https://allenvincentlucas.github.io/saint-of-the-day/saints/st-lawrence.html').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Link',1500)})">Copy Link</button>
       </div>
     </div>
   </section>
