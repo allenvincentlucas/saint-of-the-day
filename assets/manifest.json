@@ -294,6 +294,31 @@
       "preview": "saints/previews/st-pontian-and-hippolytus.png",
       "added": "2026-08-10",
       "release_date": "2026-08-13"
+    },
+    {
+      "slug": "maximilian-kolbe",
+      "name": "St. Maximilian Kolbe",
+      "tagline": "A Polish friar who built a media empire to spread devotion to Mary sheltered thousands of refugees from the Nazis, was sent to Auschwitz, and volunteered to die in another prisoner's place",
+      "feast_day": "08-14",
+      "feast_day_display": "August 14",
+      "feast_day_tradition": "Catholic Church (current General Roman Calendar)",
+      "feast_days_other": [
+        {
+          "tradition": "Anglican Communion & Lutheran churches",
+          "date": "08-14",
+          "date_display": "August 14"
+        }
+      ],
+      "patronage": "Prisoners, drug addicts, families, journalists, amateur radio operators",
+      "era": "20th century",
+      "colors": {
+        "primary": "#2b1f18",
+        "accent": "#7a1f28"
+      },
+      "page": "saints/st-maximilian-kolbe.html",
+      "preview": "saints/previews/st-maximilian-kolbe.png",
+      "added": "2026-08-10",
+      "release_date": "2026-08-14"
     }
   ]
 }
