@@ -245,6 +245,36 @@
       "preview": "saints/previews/st-clare.png",
       "added": "2026-08-08",
       "release_date": "2026-08-11"
+    },
+    {
+      "slug": "jane-frances-de-chantal",
+      "name": "St. Jane Frances de Chantal",
+      "tagline": "Widowed at 28 with four children, a French noblewoman rebuilt her life three more times, co-founding a religious order built for people other convents wouldn't take",
+      "feast_day": "08-12",
+      "feast_day_display": "August 12",
+      "feast_day_tradition": "Catholic Church (current General Roman Calendar)",
+      "feast_days_other": [
+        {
+          "tradition": "Catholic Church (General Roman Calendar, 1769–1969)",
+          "date": "08-21",
+          "date_display": "August 21"
+        },
+        {
+          "tradition": "Anglican Communion",
+          "date": "08-12",
+          "date_display": "August 12"
+        }
+      ],
+      "patronage": "Widows, forgotten people, in-law difficulties",
+      "era": "16th–17th century",
+      "colors": {
+        "primary": "#232b31",
+        "accent": "#b7c2c9"
+      },
+      "page": "saints/st-jane-frances-de-chantal.html",
+      "preview": "saints/previews/st-jane-frances-de-chantal.png",
+      "added": "2026-08-10",
+      "release_date": "2026-08-12"
     }
   ]
 }
