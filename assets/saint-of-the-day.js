@@ -110,6 +110,7 @@ function renderHero(container, saints) {
     const eyebrow = isRealFeast
       ? `Feast day today${labels.length ? " &middot; " + labels.map(escapeHtml).join(", ") : ""}`
       : "From the archive";
+    const absUrl = new URL(saint.page, window.location.href).href;
     return `
       <article class="hero-card" style="--saint-primary:${saint.colors?.primary || "#4b2e6b"};--saint-accent:${saint.colors?.accent || "#c9862f"}">
         <p class="hero-eyebrow">${eyebrow}</p>
@@ -121,8 +122,27 @@ function renderHero(container, saints) {
           <span class="chip chip-rubric">${escapeHtml(saint.feast_day_display || "")}</span>
         </div>
         <a class="hero-link" href="${saint.page}">Read her page &rarr;</a>
+        ${shareRowHTML(absUrl, saint.name)}
       </article>`;
   }).join("");
+}
+
+/** Shared "Share" row markup: Facebook, X, and a Copy Link fallback
+ *  (Instagram has no URL-prefill share intent, so Copy Link covers it).
+ *  Used on the homepage hero; individual saints/*.html pages carry a
+ *  static equivalent since those files have no JS dependency on this
+ *  module. */
+function shareRowHTML(absUrl, title) {
+  const encodedUrl = encodeURIComponent(absUrl);
+  const encodedTitle = encodeURIComponent(title || "");
+  const safeUrlForJs = absUrl.replace(/'/g, "\\'");
+  return `
+    <div class="share-row">
+      <span class="share-label">Share</span>
+      <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}" target="_blank" rel="noopener">Facebook</a>
+      <a class="share-btn" href="https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}" target="_blank" rel="noopener">X</a>
+      <button type="button" class="share-btn" onclick="navigator.clipboard.writeText('${safeUrlForJs}').then(()=>{this.textContent='Copied!';setTimeout(()=>this.textContent='Copy Link',1500)})">Copy Link</button>
+    </div>`;
 }
 
 /** Renders a 7-day strip (today + next 6 days) of upcoming feasts, for the homepage. */
