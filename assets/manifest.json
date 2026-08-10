@@ -275,6 +275,25 @@
       "preview": "saints/previews/st-jane-frances-de-chantal.png",
       "added": "2026-08-10",
       "release_date": "2026-08-12"
+    },
+    {
+      "slug": "pontian-and-hippolytus",
+      "name": "Sts. Pontian and Hippolytus",
+      "tagline": "A pope and the man who set himself up against him as history's first antipope spent eighteen years as rivals — then were exiled to the same mines, and died reconciled",
+      "feast_day": "08-13",
+      "feast_day_display": "August 13",
+      "feast_day_tradition": "Catholic Church (current General Roman Calendar, optional memorial)",
+      "feast_days_other": [],
+      "patronage": "No major universal patronage documented",
+      "era": "3rd century",
+      "colors": {
+        "primary": "#302e29",
+        "accent": "#c9a03e"
+      },
+      "page": "saints/st-pontian-and-hippolytus.html",
+      "preview": "saints/previews/st-pontian-and-hippolytus.png",
+      "added": "2026-08-10",
+      "release_date": "2026-08-13"
     }
   ]
 }
