@@ -180,6 +180,40 @@ a { color: inherit; }
 }
 .hero-link:hover { filter: brightness(1.15); }
 
+/* -------- share row (homepage hero + saint pages) -------- */
+.share-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.share-label {
+  font-family: var(--mono-font);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.share-btn {
+  font-family: var(--mono-font);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink-dim);
+  background: var(--parchment);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.share-btn:hover, .share-btn:focus-visible {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
 .hero-empty, .archive-empty {
   text-align: center;
   color: var(--ink-dim);
